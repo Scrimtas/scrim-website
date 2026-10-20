@@ -32,17 +32,17 @@
 
     --scrollbar-accent: #565280;
 --scrollbar-bg: #282846;
-    --bg-image: url('/public/images/lighthouse-background2.jpg');
-    --header-image: url('/public/images/lighthouse-banner.jpg');
-    --card-texture: url('/public/images/paper-texture.jpg');
+    --bg-image: url('../images/lighthouse-background2.jpg');
+    --header-image: url('../images/lighthouse-banner.jpg');
+    --card-texture: url('../images/paper-texture.jpg');
      --bg-position: bottom;
     --bg-attachment:local;
     --bg-size: cover;
     --bg-position-header: center;
    --bg-size-header: cover;
 
-   --cursor-hover: url('/public/images/lantern-cursor.png'), auto;
-   --cursor: url('/public/images/lantern-cursor.png'), auto;
+   --cursor-hover: url('../images/lantern-cursor.png'), auto;
+   --cursor: url('../images/lantern-cursor.png'), auto;
 
 }
 
@@ -198,7 +198,7 @@ span.accent {
             list-style: none;
 
   padding-left: 2rem;
-  background-image: url("/public/images/candle-holder.png");
+  background-image: url("../images/candle-holder.png");
    background-size: 1.8rem 1.8rem;
   background-repeat: no-repeat;
 }

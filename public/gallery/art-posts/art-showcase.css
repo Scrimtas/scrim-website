@@ -32,14 +32,14 @@
 
     --scrollbar-accent: #e78a5f;
 --scrollbar-bg: #291211;
-    --bg-image: url('/public/images/brown-forest-background.jpg');
-    --header-image: url('/public/images/otgw-banner.jpg');
+    --bg-image: url('../../images/brown-forest-background.jpg');
+    --header-image: url('../../images/otgw-banner.jpg');
     --bg-position: center;
     --bg-attachment: fixed;
     --bg-size: cover;
 
-     --cursor-hover: url('/public/images/lantern-cursor.png'), auto;
-   --cursor: url('/public/images/raven-cursor.png'), auto;
+     --cursor-hover: url('../../images/lantern-cursor.png'), auto;
+   --cursor: url('../../images/raven-cursor.png'), auto;
 }
 
 body {
@@ -342,11 +342,16 @@ hr {
    
     margin:0.7em 0;
 }
-
 #main {   
    
    padding: 20px;
- 
+ min-height: 100vh;
+
+ @media (max-width: 800px) {
+        width: 90vw;
+ min-height: 60vh;
+
+   } 
    .card {
     display: block;
     justify-content: center;
@@ -363,7 +368,6 @@ hr {
 
    } 
 }
-
    .card h1, .card h2, .card h3, .card h4, .card h5, .card h6, a, i, em, b, strong {
     color: var(--card-accents);
    }

@@ -36,13 +36,13 @@
 
     --scrollbar-accent: #e78a5f;
 --scrollbar-bg: #291211;
-    --bg-image: url('/public/images/brown-forest-background.jpg');
-    --header-image: url('/public/images/otgw-banner.jpg');
+    --bg-image: url('../images/brown-forest-background.jpg');
+    --header-image: url('../images/otgw-banner.jpg');
     --bg-position: center;
     --bg-attachment: fixed;
     --bg-size: cover;
-  --cursor-hover: url('/public/images/lantern-cursor.png'), auto;
-   --cursor: url('/public/images/raven-cursor.png'), auto;
+  --cursor-hover: url('../images/lantern-cursor.png'), auto;
+   --cursor: url('../images/raven-cursor.png'), auto;
 
 }
 
