@@ -58,7 +58,7 @@ body {
       font-size:1em;
 cursor: var(--cursor);
  
-      a, a:hover {
+       a, a:hover, button, button:hover {
           cursor: var(--cursor-hover);
 
 }

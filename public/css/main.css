@@ -44,7 +44,7 @@ body {
       font-size:1em;
       cursor: url('../images/raven-cursor.png'), auto;
  
-      a, a:hover {
+      a, a:hover, button, button:hover {
           cursor: url('../images/lantern-cursor.png'), auto;
 
 }
