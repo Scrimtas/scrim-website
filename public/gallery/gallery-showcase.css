@@ -874,6 +874,11 @@ div.left {
     gap: 15px;  
     margin-top: 15px;
     align-items: start;  
+
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(auto-fill, minmax(80%, 1fr)); 
+    }
+    
 }
 
  .media-item {
@@ -883,6 +888,8 @@ div.left {
     border-radius: var(--corners);
     
     width: 100%;  
+
+    
 }
 
  .media-item img {
