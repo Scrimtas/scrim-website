@@ -948,3 +948,7 @@ div.left {
     margin-top: 0.3em;
     font-size: smaller;   
 }
+
+.checked {
+  color: var(--card-link-hover);
+}

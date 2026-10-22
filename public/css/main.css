@@ -550,6 +550,9 @@ img.link-button {
     border-radius: 2px;
     width:88px;
     height: 31px;
+    @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
 textarea {
