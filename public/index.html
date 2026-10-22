@@ -9,15 +9,20 @@
        <link rel="icon" href="favicon.ico">
  
      <link rel="stylesheet" href="css/main.css">
-</head>
+    <script src="/js/stop-motion.js"></script>
+
+ </head>
 <body>
 <div class="site-layout"> 
    
-
+           <!--Banner-->
          <div id="header" >
             <h1>Scrimtas</h1>
+            
         </div>
-  
+           <!--Banner end-->
+
+           <!--Navbar-->
           <div id="navbar" >
             <ul>
                 <li><a href="index.html">Home page</a></li>
@@ -26,11 +31,13 @@
                 <li><a href="https://neocities.org/site/scrimtas">Neocities profile</a></li>
             </ul>
         </div>
- 
+            <!--Navbar end-->
     
-     
-        <div id="sidebar"  >
-           <div class="sidebar-image">
+         <!--Sidebar-->
+        <div id="sidebar" >
+<!--Puter-specific-->
+          <div class="mobile-hide"> 
+            <div class="sidebar-image">
             <img class="icon" src="images/twin-peaks-bird.jpg">
         </div>
 
@@ -63,8 +70,47 @@
                 </ul>
             </ul>
 </div>
-        </div>
+</div>
+<!--Puter-specific-->
 
+<!--Mobile specific-->
+  <div class="mobile-show"> 
+  <details id="mobile-nav">
+<summary id="mobile-nav-toggle">Navigation</summary>
+  <div class="sidebar-info-boxes second-element"> 
+         <ul>
+                <li class="leaf"><span class="sidebar-accent">General info</span> </li>
+               <ul>
+                <li class="list-square"><a  href="one-pagers/about-me.html">About me!</a></li>
+                <li class="list-square"><a href="one-pagers/interests.html">Interests</a></li>
+               </ul>
+
+                  <li class="leaf"><span class="sidebar-accent">Blog</span>  </li>
+               <ul>
+                <li class="list-square"><a href="blog-posts/blog.html">Dear diary,</a> </li> 
+                <li class="list-square"><a href="media/media-general.html">Media yaps</a></li>
+                <li class="list-square"><a class="disabled" href="">Albums superhell</a></li>
+               </ul>
+
+                  <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
+               <ul>
+                <li class="list-square"><a href="gallery/gallery-showcase.html">Art gallery</a></li>
+                <li class="list-square"><a href="one-pagers/oc-general-page.html">My characters</a></li>
+                <li class="list-square"><a class="disabled" href="">Vibes checkpoint</a> </li>
+               </ul>
+
+                  <li class="leaf"><span class="sidebar-accent">Resources</span></li>
+               <ul>
+                <li class="list-square"><a href="one-pagers/graphics-credits.html">Graphics credits</a></li>
+                <li class="list-square"><a href="one-pagers/resources.html">Website resources</a></li>
+                </ul>
+            </ul>
+</div></div>
+<!--Mobile specific-->
+</div>
+         <!--Sidebar end-->
+
+    <!--Main-->
         <div id="main" >
           <!-- Card 1 -->
               <div class="card">
@@ -77,12 +123,12 @@
 <p>I didn't finish all the pages I plan to have here yet, but hopefully I'll fix that soon!</p> 
               <div> <p>I believe that'd be a right thing to let you know about the <strong>Content warnings</strong>? For now I believe this website is rather <span class="accent">#familyfriendly</span> and I think I'd prefer to keep its relatively neutral tone. I would try to mark any possibly triggering content appropriately, but please keep in mind that I'm an <span class="accent">adult</span> person. 
                 Thus, you can see some swearing here and there and there might be depictions of moderate violence/blood, as well as artistic nudity, on my artworks. Furthermore, both my own stories and stories of the media I admire often deal with darker topics, which, as I said, I'll try my best to mark properly when discussing, but still an important head-ups.  </p>
-                <p><b>Accessibility-wise</b>, I try my best to avoid flashing animated content and clashing colors, so hopefully no jumpscares on this side. I use <strong>javascript</strong> for tag system in art gallery/diary entries, so the sorting features won't work if you have it turned off, but except for that it shouldn't affect your experience much. 
+                <p><b>Accessibility-wise</b>, I try my best to avoid flashing animated content (and gifs in general, except for site links buttons) and clashing colors, so hopefully no jumpscares on this side. I use <strong>javascript</strong> for tag system in art gallery/diary entries + to stop the gifs on the homepage, so the sorting features and stop/play gif feature won't work if you have it turned off, but except for that it shouldn't affect your experience much. 
               </p>
              </div>      
   </div>
                     <hr class="post-bottom">
-<span class="date">/ last upd. 18 oct 2026</span>
+<span class="date">/ last upd. 22 oct 2026</span>
             </div> 
              <!-- Card 1 end -->
 
@@ -125,6 +171,18 @@
                         <img class="button" src="please host the image on your server instead of hotlinking, ty" alt="scrimtas"></a> 
 </textarea>
                 </div>
+                <hr>
+                 <div class="gif-controls">
+                    <p><b>Note:</b> some of buttons are gifs! I have the motion turned off on this page by default, so click the button if you want to see animations! 
+                     <!--play/stop gifs button-->
+                    <button id="master-gif-toggle" class="master-toggle-btn" aria-label="Play all animations">
+        <span class="icon">▶</span> <span class="text">Play</span>
+    </button>
+       <!--play/stop gifs button end-->
+    </p> 
+   
+
+</div>
          <hr> 
  <h3>Neigbours!</h3>
          <p class="text-center">Fellow mutuals from the indieweb world, hiii</p>       
@@ -141,6 +199,7 @@
 <a href="https://cozyamanda.neocities.org/" target="_blank"><img class="button" src="images/buttons/cozyamanda-button.png" alt="cozyamanda"></a>
 
      </div>     
+     
 <hr> 
  <h3>Looking respectfully</h3>
          <p class="text-center">Various cool sites that have been a great inspiration for me! The list is, in fact, longer, planning to update it!</p>       
@@ -169,12 +228,14 @@
     
      </div>
                       <hr class="post-bottom">
-<span class="date">/ last upd. 18 oct 2026</span>
+<span class="date">/ last upd. 22 oct 2026</span>
             </div> 
              <!-- Card 3 end -->
 
         </div> 
+    <!--Main end-->
 
+    <!--Right sidebar-->
         <div id="sidebar-right"  >
             <!--Current status-->
             <div class="sidebar-info-boxes">  
@@ -191,11 +252,19 @@
             </div>
             <!--Current status-->
 
+            <!--Woke dog section-->
+            <div class="pagedoll-wrapper">
+<img class="pagedoll-image" src="images/scrim-guitar-pagedoll.png">
+</div>
+                        <!--Woke dog section end-->
+
  <!--Changelog-->
             <div class="sidebar-info-boxes second-element">
                 <h5>Changelog!</h5>
                 <div class="sidebar-boxes changelog">
 <ul>     
+                             <li class="list-point">[22 oct 2026] Attempt to make sidebar more mobile friendly + fixed navbar alignment for small screens. Trying to implement the gif stopper on the home page. </li>
+
                          <li class="list-point">[21 oct 2026] THE github synchronisation struggle. I believe it's supposed to be a-okay but will test properly tomorrow because I went insane trying, sorry in advance for updates spam...<a href="media/media-general.html">Media yaps</a> and <a href="one-pagers/resources.html">Websites resources</a> are (somewhat) live! </li>
 
                          <li class="list-point">[18 oct 2026] <a href="one-pagers/graphics-credits.html">Graphics credits</a> are finally there, as well as <a href="one-pagers/site-map.html">the site map</a> and <a href="one-pagers/oc-general-page.html">character page</a>! Using a custom cursor from now :p </li>
@@ -218,19 +287,22 @@
      <li class="list-point">[27 apr 2025] First logged in the site but freaked out and retreated because i didn't know shittt </li>
 
 </ul>    
+
                   </div>
+    <div class="absolute-text">
+    <p>It scrolls!</p>
+    </div>
             </div>
             <!--Changelog-->
         </div>
-      
+          <!--Right sidebar-->
 
-       
+
+</div>
         <div id="footer" >
             <p>Scrimtas (2026-...) via Neocities</p>
         </div>
-     
 
- 
-</div>
+      
 </body>
 </html>

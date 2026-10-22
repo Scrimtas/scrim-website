@@ -198,6 +198,34 @@ color: #adadac;
     }
 
  
+@media (max-width:800px) {
+    .mobile-hide {
+        display:none;
+    }
+
+
+}
+ 
+.mobile-show {
+
+#mobile-nav-toggle {
+background-color: #522518;
+border-radius: var(--corners);
+padding: 0.5em;
+width: 80vw;
+margin: auto;
+ }
+
+ .sidebar-info-boxes.second-element
+ {
+    margin-left: 2em;
+
+ }
+    @media (min-width:801px) {
+                display:none;
+    }
+}
+
 
 .sidebar-boxes {
 background-color: var(--sidebar-tabs);
@@ -293,27 +321,45 @@ li.list-square  {
     justify-content: center;
     align-items: center;  
     text-align: center;
+}
 
-    a, p, li, li a {
-        color: var(--navbar-text);
+#navbar a, #navbar p, #navbar li, #navbar li a {
+    color: var(--navbar-text);
+ }
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2em;
+    margin: 0; 
+    padding: 0.5em;  
+    
+}
+
+#navbar a:hover {
+    color: var(--accent-color-nav);
+}
+
+ @media (max-width: 800px) {
+    #navbar {
+        position: static;
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        gap: 2em;
-        margin: 0; 
-        padding: 0.5em;  
+    #navbar ul {
+        flex-wrap: wrap;          
+        justify-content: center;  
+        gap: 10px;                
     }
 
-      a:hover {
-        color:var(--accent-color-nav);
+    #navbar ul li a {
+        text-align: center;
+        white-space: nowrap;    
+        display: inline-block;
+        background-color: #2e2220;
+        padding: 0.35em 0.85em;
+        border-radius: var(--corners);
     }
-
-    @media (max-width: 800px) {
-
-        position:static }
 }
 
 #footer {
@@ -354,8 +400,7 @@ hr {
     justify-content: center;
     width: 60vw;
     padding: 30px;
- /* This is the magic part for centering */
-    margin: 20px auto; 
+     margin: 20px auto; 
         background-color: var(--card-color);
     color: var(--card-text); 
    border:  var(--card-borders);
@@ -525,16 +570,14 @@ width: auto;
 
 .tracker-wrapper.characters {
     display: grid;
-    /* Change this to 300px or 350px for thinner cards */
-    grid-template-columns: repeat(auto-fit, 35%); 
+     grid-template-columns: repeat(auto-fit, 35%); 
     gap: 20px;  
 align-items: stretch;
     width: 100%;
-    justify-content: center; /* Centers the grid if there are only 1 or 2 cards */
+    justify-content: center;  
 } 
 
-/* Mobile fix stays the same */
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
    .tracker-wrapper.characters {
          grid-template-columns: 1fr; 
     }
@@ -700,7 +743,7 @@ li.wip {
     color: #fffbf6;
     padding: 3px 8px;
     border-radius: 3px;
-    font-size: 0.75em; /* Very small text */
+    font-size: 0.75em;  
     font-weight: bold;
     letter-spacing: 0.5px;
 

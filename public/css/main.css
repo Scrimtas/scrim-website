@@ -30,9 +30,13 @@
 --scrollbar-bg: #291211;
     --bg-image: url('../images/brown-forest-background.jpg');
     --header-image: url('../images/otgw-banner.jpg');
+    --cursor: url('../images/raven-cursor.png'), auto;
+    --cursor-hover: url('../images/lantern-cursor.png'), auto;
+
  }
 
 body {
+ min-height: 100vh;
   background-color:var(--background);
   background-image: var(--bg-image);
   background-position: center;
@@ -42,10 +46,10 @@ body {
   margin: 0;
   overflow-x: hidden;
       font-size:1em;
-      cursor: url('../images/raven-cursor.png'), auto;
+      cursor: var(--cursor);
  
       a, a:hover, button, button:hover {
-          cursor: url('../images/lantern-cursor.png'), auto;
+          cursor: var(--cursor-hover);
 
 }
 
@@ -55,12 +59,10 @@ body {
   color: rgb(34, 11, 11);
   background: rgb(236, 172, 147);
 }
-/* Renamed to avoid Bootstrap's .container class */
-.site-layout {
+ .site-layout {
   display: grid;
  
-  /* Added a 3rd "header" so it spans all 3 columns */
-  grid-template:
+   grid-template:
     "header header header"
     "navbar navbar navbar"
     "sidebar main sidebar-right"
@@ -70,8 +72,7 @@ body {
 
 @media (max-width: 800px) {
   .site-layout {
-    /* Fixed the names to match your actual grid areas */
-    grid-template:
+     grid-template:
       "header"
       "navbar"
       "sidebar"
@@ -86,8 +87,7 @@ body {
  
 }
 
-/* These must be direct children of .site-layout */
-div#header { grid-area: header; }
+ div#header { grid-area: header; }
 div#navbar { grid-area: navbar; }
 div#sidebar { grid-area: sidebar; }
 div#main { grid-area: main; }
@@ -228,6 +228,36 @@ color: #adadac;
 }
 }
 
+@media (max-width:800px) {
+    .mobile-hide {
+        display:none;
+    }
+
+
+}
+ 
+.mobile-show {
+
+#mobile-nav-toggle {
+background-color: #522518;
+border-radius: var(--corners);
+padding: 0.5em;
+width: 80vw;
+margin: auto;
+ }
+
+ .sidebar-info-boxes.second-element
+ {
+    margin-left: 2em;
+
+ }
+    @media (min-width:801px) {
+                display:none;
+    }
+}
+
+
+
 .sidebar-boxes {
 background-color: var(--sidebar-tabs);
 padding-top: 10px;
@@ -254,7 +284,7 @@ margin:0;
 .sidebar-info-boxes {
     margin-top:10px;
         margin-bottom:10px;
- 
+ position: relative;
     li>span.sidebar-accent {
         color: var(--accent-color-sidebar);
     }
@@ -286,6 +316,7 @@ li.list-square  {
     height: 250px;
     padding:10px;
      scrollbar-width: none;
+     position: relative;
 }
 
 
@@ -310,7 +341,6 @@ li.list-square  {
 }
  
 /* scrollbar end */
-
 #navbar {
     position: sticky;
     top: 0;
@@ -323,27 +353,45 @@ li.list-square  {
     justify-content: center;
     align-items: center;  
     text-align: center;
+}
 
-    a, p, li, li a {
-        color: var(--navbar-text);
+#navbar a, #navbar p, #navbar li, #navbar li a {
+    color: var(--navbar-text);
+ }
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2em;
+    margin: 0; 
+    padding: 0.5em;  
+    
+}
+
+#navbar a:hover {
+    color: var(--accent-color-nav);
+}
+
+ @media (max-width: 800px) {
+    #navbar {
+        position: static;
     }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        gap: 2em;
-        margin: 0; 
-        padding: 0.5em;  
+    #navbar ul {
+        flex-wrap: wrap;          
+        justify-content: center;  
+        gap: 10px;                
     }
 
-      a:hover {
-        color:var(--accent-color-nav);
+    #navbar ul li a {
+        text-align: center;
+        white-space: nowrap;    
+        display: inline-block;
+        background-color: #2e2220;
+        padding: 0.35em 0.85em;
+        border-radius: var(--corners);
     }
-
-    @media (max-width: 800px) {
-
-        position:static }
 }
 
 #footer {
@@ -468,6 +516,7 @@ width: auto;
     overflow: hidden;  
 }
 
+ 
 .song-title {
     color: var(--card-accents);
     font-size: 15px;  
@@ -544,3 +593,122 @@ span.small {
     max-width:70%;
     margin:auto;
 }
+
+.absolute-text {
+    position: absolute;
+    z-index: 15;
+   bottom:  -1.5em;
+    right: 10px; 
+
+    p {
+        color: var(--accent-color-sidebar)!important;  
+        font-size: 1em;
+        font-style: italic;
+        margin: 0; 
+    }
+
+    @media (max-width:800px) {
+        position: absolute;
+        z-index: 15;
+        top: auto;   
+        bottom: -1em;  
+         right: 5px; 
+
+        p {
+         font-size: 0.8em;
+     }
+    }
+}
+ 
+ /* gif pausing madness */
+.gif-controls {
+    display: block;  
+    text-align: center;  
+    margin-bottom: 15px;
+}
+
+.master-toggle-btn {
+    background-color: var(--post-button-bg);
+    color: var(--post-button-text);
+    border: 2px solid var(--card-borders);  
+    border-radius: 20px;  
+    padding: 6px 16px;
+    font-family: inherit;
+     cursor: var(--cursor); 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+
+     display: inline-flex;  
+    vertical-align: middle; 
+    margin-left: 5px;  
+    
+     padding: 4px 10px; 
+    font-size: 0.85em;
+}
+
+.master-toggle-btn:hover {
+    background-color: var(--post-button-hover);
+    color: var(--post-button-hover-text);
+}
+
+ .gif-container {
+    display: inline-block;
+    position: relative;
+    cursor: var(--cursor); 
+    border-radius: var(--corners);
+    overflow: hidden;
+}
+
+.gif-container canvas,
+.gif-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--corners);
+}
+
+.gif-container img.animated-gif {
+    display: none;
+}
+
+.gif-container.playing img.animated-gif {
+    display: block;
+}
+
+.gif-container.playing canvas {
+    display: none;
+}
+
+.gif-container {
+    display: inline-block;
+    position: relative;
+    cursor: var(--cursor-hover); 
+    border-radius: var(--corners);
+    overflow: hidden;
+    vertical-align: middle; 
+    line-height: 0; 
+}
+
+.gif-container canvas,
+.gif-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 88px; 
+    max-height: 31px; 
+    border-radius: var(--corners);
+}
+ /* gif pausing madness */
+
+ 
+.pagedoll-wrapper {
+ display: flex;
+    justify-content: center;
+}
+
+.pagedoll-image {
+    width: 90%;
+}
+ 
