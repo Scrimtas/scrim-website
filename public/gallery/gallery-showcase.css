@@ -952,3 +952,12 @@ div.left {
 .checked {
   color: var(--card-link-hover);
 }
+
+
+  ul.square {
+       padding: 0;
+        list-style: square;
+        text-align: left;
+margin-left:2em;
+
+    }
