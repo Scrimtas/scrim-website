@@ -918,7 +918,7 @@ div.left {
      grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); 
     gap: 15px;  
     margin-top: 15px;
-    align-items: start;  
+    align-items: stretch;  
 
     @media (max-width: 800px) {
         grid-template-columns: repeat(auto-fill, minmax(80%, 1fr)); 
@@ -994,3 +994,4 @@ margin-left:2em;
     display: block;   
     margin-top: 5px;    
 }
+
