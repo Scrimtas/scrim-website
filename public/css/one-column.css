@@ -621,11 +621,10 @@ align-items: stretch;
 li.fave {
     color: var(--card-accents);
  
-    
-     list-style: none; 
+     list-style: none;
      margin-left: -1.5rem; 
      padding-left: 1.6rem; 
-    background-image: url(/images/kitty-loaf-smaller-20.png);
+    background-image: url(../images/kitty-loaf-smaller-20.png);
     background-size: 1.4rem 1.4rem; 
     background-repeat: no-repeat;
     background-position: 0 0.25rem; 
@@ -635,7 +634,7 @@ li.left {
      list-style: none; 
      margin-left: -1.5rem; 
      padding-left: 1.6rem; 
-    background-image: url(/images/tea-smaller-20.png);
+    background-image: url(..//images/tea-smaller-20.png);
     background-size: 1.4rem 1.4rem; 
     background-repeat: no-repeat;
     background-position: 0 0.25rem; 
@@ -647,35 +646,35 @@ li.normal {
      margin-left: -1.5rem; 
      padding-left: 1.6rem; 
  
-    background-image: url(/images/swallow-smaller-20.png);
+    background-image: url(../images/swallow-smaller-20.png);
     background-size: 1.4rem 1.4rem; 
     background-repeat: no-repeat;
     background-position: 0 0.25rem; 
 }
  li.fave-wip {
     color: var(--card-accents);
-    list-style-image: url(/images/kitty-loaf-smaller-20.png);
+    list-style-image: url(../images/kitty-loaf-smaller-20.png);
  }
 
  li.fave-wip::before {
-   content: url(/images/eye-smaller-20.png);
+   content: url(../images/eye-smaller-20.png);
   }
 
 li.fave-left {
         color: var(--card-accents);
         list-style-type: "◐ ";
-    list-style-image: url(/images/kitty-loaf-smaller-20.png);
+    list-style-image: url(../images/kitty-loaf-smaller-20.png);
 
 }
  li.fave-left::before {
-    content: url(/images/tea-smaller-20.png);
+    content: url(../images/tea-smaller-20.png);
  }
 
 li.wip { 
      list-style: none; 
      margin-left: -1.5rem; 
      padding-left: 1.6rem; 
-    background-image: url(/images/eye-smaller-20.png);
+    background-image: url(../images/eye-smaller-20.png);
     background-size: 1.4rem 1.4rem; 
     background-repeat: no-repeat;
     background-position: 0 0.25rem; 
