@@ -228,7 +228,7 @@ color: #adadac;
 }
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
     .mobile-hide {
         display:none;
     }
@@ -610,7 +610,7 @@ span.small {
         margin: 0; 
     }
 
-    @media (max-width:800px) {
+    @media (max-width:600px) {
         position: absolute;
         z-index: 15;
         top: auto;   

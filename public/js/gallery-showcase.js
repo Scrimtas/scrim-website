@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.tag-btn');
-    const items = document.querySelectorAll('.gallery-item, .blog-item, .media-item, .album-item');
+    const items = document.querySelectorAll('.gallery-item, .blog-item, .media-item, .album-item, .oc-item');
     const allButton = document.querySelector('[data-filter="all"]');
 
      function filterItems() {

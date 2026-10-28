@@ -198,7 +198,7 @@ color: #adadac;
     }
 
  
-@media (max-width:800px) {
+@media (max-width:600px) {
     .mobile-hide {
         display:none;
     }
