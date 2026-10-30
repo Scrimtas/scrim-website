@@ -432,6 +432,7 @@ a:hover {
     background-color: var(--card-color);
     color: var(--card-text); 
     border: var(--card-borders);
+    border-radius: var(--corners);
     overflow: visible;
    @media (max-width: 800px) {
         width: 90vw;
@@ -1005,6 +1006,8 @@ span.character-name {
     margin-top: 0; 
 }
 
+ 
+
 .connection-item {
     display: flex;
     flex-direction: row;
@@ -1013,9 +1016,19 @@ span.character-name {
     margin: 15px 15px;
 }
 
+
+.connection-item.right {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: flex-start; 
+    margin: 15px 15px;
+}
+
+
 .connection-image {
-    width: 120px; 
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover; 
       flex-shrink: 0; 
 }
@@ -1045,19 +1058,39 @@ span.character-name {
 
 .connection-desc {
     text-indent: 0; 
-    margin: 0;
+    margin: 0.3em 0;
     color: var(--card-text);
     font-size: 1em;
 }
 
 @media (max-width: 800px) {
-    .likes-dislikes-wrapper {
+  .likes-dislikes-wrapper {
         flex-direction: column;
     }
     
-    .connection-image {
-        width: 80px;
-        height: 80px;
+     .connection-item,
+    .connection-item.right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;  
+        margin: 15px 0;  
+    }
+
+     .connection-image {
+        width: 120px;  
+        height: 120px;
+    }
+
+     .connection-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .connection-name, 
+    .connection-relation, 
+    .connection-desc {
+        text-align: center;
     }
 }
 
@@ -1165,6 +1198,11 @@ span.date-spoiler {
    }
    .small {
     font-size: smaller;
+   }
+
+   h3 {
+    font-size: 1.4em;
+
    }
 
    h4 {
@@ -1424,6 +1462,10 @@ span.date-spoiler {
     }
 }
 
+#sidebar li   {
+    font-size: 0.95em;
+ }
+
 /* ghh lightbox */
 
 
@@ -1548,3 +1590,11 @@ span.date-spoiler {
     line-height: 1.5;
 }
 /* lightbox end */
+
+.card-in-card.songlog {
+    margin-bottom: 0.5em;
+}
+
+.title {
+margin-bottom: 0.7em;
+}

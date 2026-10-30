@@ -15,7 +15,7 @@
     --accent-color-nav: #e9946c;
     --accent-color-sidebar: #e78a5f;
     --card-text: #311414;
-    --card-color: #ffe4c4; 
+    --card-color: #ffdcc4; 
     --card-borders: solid 3px #ffddc6;
     --card-accents: #6b3131;
     --card-link-hover: #e78a5f;
@@ -114,6 +114,9 @@ a {
 
 }
 
+#main a:hover, #main a:focus-visible {
+    text-decoration: underline;
+}
 .img-wrap {
   float: right;
   width:25%;
@@ -289,10 +292,7 @@ li.list-square  {
 }
 
 
- li.list-point {
-        list-style-type: "> ";  
-     margin-left: 15px;
-    }
+ 
 
  ::-webkit-scrollbar {
   width: 8px;
@@ -662,8 +662,7 @@ li.normal {
 
 li.fave-left {
         color: var(--card-accents);
-        list-style-type: "◐ ";
-    list-style-image: url(../images/kitty-loaf-smaller-20.png);
+     list-style-image: url(../images/kitty-loaf-smaller-20.png);
 
 }
  li.fave-left::before {
@@ -764,3 +763,119 @@ li.wip {
                 color: #fff1ec!important;
 
 }
+
+/* song player */
+
+.playlist-container {
+     margin: 0.5em 1em;
+}
+
+.playlist-container h4 {
+    margin: 0 0 15px 0;
+    font-family: var(--font-fancy);
+    color: var(--card-accents);
+}
+ .song {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0;
+}
+
+ .song-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+}
+
+ .song-title {
+    font-size: 1em;
+    color: var(--card-accents);
+    text-indent: 0;
+    text-align: left;
+    margin-bottom: 8px;
+         margin: 0.5em 1em;
+
+}
+
+ .song-audio {
+  height: 32px;  
+    width: 100%;  
+    max-width: 400px;  
+    border-radius: 3rem;
+    opacity: 0.6;  
+    display: block;
+}
+
+ .song-lyrics {
+    flex: 1;
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--card-text);
+    line-height: 1.4;
+}
+
+ @media (max-width: 600px) {
+    .song {
+         flex-direction: column; 
+        align-items: center; 
+        gap: 15px;  
+        padding:  0; 
+    }
+
+    .song-left {
+        width: 100%;
+        align-items: center; 
+    }
+
+    .song-title {
+        text-align: center; 
+        width: 100%;
+        margin-bottom: 10px;  
+    }
+
+    .song-audio {
+        height: 32px;  
+    width: 100%;  
+    max-width: 400px;  
+    border-radius: 3rem;
+    opacity: 0.6;  
+    display: block;
+    }
+
+    .song-lyrics {
+         text-align: center; 
+         width: 100%;
+         border-top: 1px solid rgba(163, 90, 68, 0.5); 
+         padding-top: 15px;  
+         margin-top: 5px;   
+    }
+}
+/* song player end */
+
+/*lists*/
+
+ li.list-point {
+        list-style-type: "> ";  
+     margin-left: 15px;
+    }
+
+
+li.updates {
+        list-style-type: "▶ ";  
+ margin: 0.5em 0;
+ 
+}
+
+li.updates a{
+font-weight: 600;
+}
+
+li.no-list {
+    list-style: none;
+
+}
+/*lists end*/

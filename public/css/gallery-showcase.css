@@ -18,7 +18,7 @@
     --accent-color-nav: #e9946c;
     --accent-color-sidebar: #e78a5f;
     --card-text: #311414;
-    --card-color: #ffe4c4;
+    --card-color: #ffdcc4;
     --card-borders: none;
     --card-accents: #6b3131;
     --card-link-hover: #e78a5f;
@@ -468,6 +468,10 @@ hr {
 
 
    }
+
+   a:hover, a:focus-visible {
+    text-decoration: underline;
+   }
 }
 
 
@@ -876,7 +880,7 @@ div.left {
 }
 
 .blog-item {
-    background-color: #ecc9ab;
+    background-color: #f1cbb1;
     color: var(--card-accents)!important;
     padding: 8px 15px;
     border-radius: var(--corners);
@@ -889,7 +893,7 @@ div.left {
 }
 
 .media-item {
-    background-color: #ecc9ab;
+    background-color: #f1cbb1;
     color: var(--card-accents)!important;
     padding: 8px 15px;
     border-radius: var(--corners);
@@ -928,7 +932,7 @@ div.left {
 }
 
  .media-item {
-    background-color: #ecc9ab;
+    background-color: #f1cbb1;
     color: var(--card-accents)!important;
     padding: 8px 15px;
     border-radius: var(--corners);
@@ -975,7 +979,7 @@ margin-left:2em;
 
     
  .album-item {
-    background-color: #ecc9ab;
+    background-color: #f1cbb1;
     color: var(--card-accents)!important;
     padding: 8px 15px;
     border-radius: var(--corners);
@@ -1015,7 +1019,7 @@ margin-left:2em;
 }
 
  .oc-item {
-      background-color: #ecc9ab;
+      background-color: #f1cbb1;
     color: var(--card-accents)!important;
     padding: 8px 15px;
     border-radius: var(--corners);
