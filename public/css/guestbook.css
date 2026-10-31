@@ -5,6 +5,8 @@
 }
 
 
+   
+  
   :root {
    --font-fancy: Georgia;
     --corners: 5px;
@@ -29,6 +31,9 @@
     --post-button-text: #ffefef;
      --post-button-hover: #853838;
 --post-button-hover-text: #ffffff;
+
+
+ --divider-card: 1px solid #bfccdd;
 
     --scrollbar-accent: #565280;
 --scrollbar-bg: #282846;
@@ -94,10 +99,10 @@ cursor: var(--cursor);
  
 }
 
- div#header { grid-area: header; }
-div#navbar { grid-area: navbar; }
- div#main { grid-area: main; }
-div#footer { grid-area: footer; }
+  header { grid-area: header; }
+nav { grid-area: navbar; }
+  main { grid-area: main; }
+footer { grid-area: footer; }
 
 h1, h2, h3, h4, h5, h6 {
         font-family:var(--font-fancy);
@@ -132,7 +137,7 @@ border-radius: var(--corners);
  li {
     text-wrap: wrap;
  }
-#header {
+ header {
   background-image: var(--header-image);
   background-position: var(--bg-position-header);
    background-size: var(--bg-size-header);
@@ -266,7 +271,7 @@ li.list-square  {
   border-radius: var(--corners);
 }
  
- #navbar {
+ nav {
     position: sticky;
     top: 0;
     z-index: 1;
@@ -280,11 +285,11 @@ li.list-square  {
     text-align: center;
 }
 
-#navbar a, #navbar p, #navbar li, #navbar li a {
+nav a, nav p, nav li, nav li a {
     color: var(--navbar-text);
  }
 
-#navbar ul {
+nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -294,22 +299,22 @@ li.list-square  {
     
 }
 
-#navbar a:hover {
+nav a:hover {
     color: var(--accent-color-nav);
 }
 
  @media (max-width: 800px) {
-    #navbar {
+    nav {
         position: static;
     }
 
-    #navbar ul {
+    nav ul {
         flex-wrap: wrap;          
         justify-content: center;  
         gap: 10px;                
     }
 
-    #navbar ul li a {
+    nav ul li a {
         text-align: center;
         white-space: nowrap;    
         display: inline-block;
@@ -319,7 +324,7 @@ li.list-square  {
     }
 }
 
-#footer {
+footer {
     margin: 0;
     padding: 0.3em;
     background-color: var(--navbar-bg);
@@ -348,7 +353,7 @@ hr {
     margin:0.7em 0;
 }
 
-#main {   
+ main  {   
    
   
    padding: 20px;
@@ -362,6 +367,7 @@ hr {
  
    .card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 60vw;
     padding: 30px;
@@ -380,6 +386,10 @@ hr {
         width: 90vw;
 
    } 
+
+   a:hover, a:focus-visible {
+    text-decoration: underline;
+   }
 }
 
 
@@ -439,7 +449,7 @@ width: auto;
 
 
 
-  #sidebar li>a {
+   aside li>a {
     display: block;
     padding: .25em .75em;
 }
@@ -617,3 +627,76 @@ overflow-y: auto;
 p.right {
     text-align: right;
 }
+
+
+
+   main .card {
+border-radius: var(--corners);
+   }
+/* bootstrap fixes */
+  .card hr, .card-in-card hr {
+      margin: 0.8em 0;  
+    border: 0;
+    border-top: var(--divider-card)!important;  
+   }
+
+    aside hr {
+     margin: 0.8em 0;  
+    border: 0;
+    border-top: var(--divider-sidebar);  
+   }
+   .small {
+    font-size: smaller;
+   }
+
+   h3 {
+    font-size: 1.4em;
+
+   }
+
+   h4 {
+    font-size: 1.3em;
+    }
+
+    h5 {
+    font-size: 1.1em;
+   }
+
+   .card, .card-in-card  {
+    padding: 0 2.5em;
+   }
+
+   ul  {
+        padding: 0 1.5em;
+   }
+
+   li {
+    margin: 0.3em 0;
+   }
+
+   ul, li, p {
+    font-weight: 400;
+    line-height: 1.5;
+   }
+
+   div.warnings hr {
+     margin: 0.5em 0;  
+    border: 0;
+    border-top: var(--divider-warnings); 
+   }
+
+   .text-center {
+     text-align: center;
+     text-indent: 0;
+   }
+
+    header h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+   }
+ 
+   
+   main .card {
+border-radius: var(--corners);
+   }
+/* bootstrap fixes */
