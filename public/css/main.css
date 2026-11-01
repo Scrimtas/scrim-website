@@ -820,3 +820,8 @@ border-radius: var(--corners);
 h5.updates  {
     margin-bottom: 0.5em;
 }
+
+.sidebar-boxes.changelog li a {
+    display: inline;
+    padding: 0; 
+}
