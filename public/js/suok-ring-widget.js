@@ -8,7 +8,7 @@
 var tag = document.getElementById(ringID); //find the widget on the page
 
 thisSite = window.location.href; //get the url of the site we're currently on
-thisIndex = 9;
+thisIndex = 10;
 
 // go through the site list to see if this site is on it and find its position
 for (i = 0; i < sites.length; i++) {

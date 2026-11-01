@@ -880,6 +880,11 @@ li.no-list {
     list-style: none;
 
 }
+
+ul.no-list>li {
+        list-style: none;
+
+}
 /*lists end*/
 
 
@@ -986,4 +991,14 @@ border-radius: var(--corners);
     flex-wrap: wrap;
     gap: 6px;  
     margin-top: 15px;
+}
+
+
+div.card-in-card {
+    background-color: var(--card-in-card-bg);
+    color: var(--card-text);
+    border: var(--card-in-card-borders);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: var(--corners);
 }
