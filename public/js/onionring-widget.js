@@ -13,7 +13,7 @@ thisIndex = 10;
 // go through the site list to see if this site is on it and find its position
 for (i = 0; i < sites.length; i++) {
     if (thisSite.startsWith(sites[i])) { //we use startswith so this will match any subdirectory, users can put the widget on multiple pages
-        thisIndex = 0;
+        thisIndex = i;
         break; //when we've found the site, we don't need to search any more, so stop the loop
     }
 }
