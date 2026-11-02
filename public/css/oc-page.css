@@ -1590,3 +1590,61 @@ margin-bottom: 0.7em;
 }
 
  
+
+/* oc directory-specific */
+a.char-name>h5 {
+    font-size: 1.8em;
+}
+
+
+.oc-grid {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 15px;  
+    margin-top: 15px;
+    align-items: stretch;  
+    width: 100%; 
+}
+
+.oc-item {
+    background-color: var(--card-in-card-bg);
+    color: var(--card-accents)!important;
+    border-radius: var(--corners);
+    border: var(--card-in-card-borders);
+    padding: 1em;
+width: calc(20% - 15px); 
+        display: flex;
+    flex-direction: column;
+}
+
+ @media (max-width: 800px) {
+    .oc-item {
+        width: 100%; 
+    }
+}
+
+ .oc-item img {
+    width: 100%;
+     aspect-ratio: 3 / 3;  
+    object-fit: cover;   
+    display: block;
+    border-radius: var(--corners)!important;
+}
+
+
+.oc-tags  {
+    text-indent: 0;
+    text-align: center;
+    white-space: normal;        
+    overflow-wrap: break-word;  
+    word-break: break-word;  
+    margin-top: 0.5em;
+    font-size: 0.85em;   
+}
+ 
+
+.oc-item h5 {
+    font-weight: bold;
+}
+/* oc directory-specific end */

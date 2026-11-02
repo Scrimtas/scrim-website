@@ -1146,3 +1146,9 @@ border-radius: var(--corners);
 border-radius: var(--corners);
    }
 /* bootstrap fixes */
+
+/* oc directory-specific */
+a.char-name>h5 {
+    font-size: 1.8em;
+}
+/* oc directory-specific end */
