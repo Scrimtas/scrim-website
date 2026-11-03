@@ -82,9 +82,10 @@ cursor: var(--cursor);
 }
 }
 
+
 ::selection {
   color: rgb(34, 11, 11);
-  background: #bfc2d6;
+  background: rgb(236, 172, 147);
 }
  .site-layout {
   display: grid;
