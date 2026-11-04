@@ -1,252 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrim > OC folder > FnV</title>
-    
-     
-        <link rel="icon" href="../favicon.ico">
-
-     <link rel="stylesheet" href="../css/oc-page.css">
-          <script src="../js/gallery-showcase.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrim > OC folder > FnV</title>
 
 
-<style>
+  <link rel="icon" href="../favicon.ico">
+
+  <link rel="stylesheet" href="../css/oc-page.css">
+  <script src="../js/gallery-showcase.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
     :root {
-    --font-main: Verdana;
-    --font-fancy: Georgia;
-    --corners: 5px;
-    --background: #E7CFBD;
-    --header-text: #350c0c;
-    --header-text-shadow:   3px  1px 5px rgb(240, 233, 233);
-    --header-letter-spacing: 1px;
-    --accent-color-nav: #e9946c;
-    --accent-color-sidebar: #e78a5f;
-    --card-text: #311414;
-    --card-color: #e9c8ae; 
-    --card-borders: solid 3px #ecc8ad;
-    --card-accents: #582626;
-    --card-link-hover: #e78a5f;
-    --sidebar-color: #311a19;
-    --sidebar-text: #f5f5f5;
-    --sidebar-link: #f5f5f5; 
-    --sidebar-tabs: #311414;
-    --navbar-text: #f5f5f5;
-    --navbar-bg: #000000;
-    --post-button-bg: #6b3131;
-    --post-button-text: #ffefef;
-     --post-button-hover: #853838;
---post-button-hover-text: #ffffff;
---card-shadow: 1px 1px 5px rgba(65, 40, 40,0.8);
+      --font-main: Verdana;
+      --font-fancy: Georgia;
+      --corners: 5px;
+      --background: #E7CFBD;
+      --header-text: #350c0c;
+      --header-text-shadow: 3px 1px 5px rgb(240, 233, 233);
+      --header-letter-spacing: 1px;
+      --accent-color-nav: #e9946c;
+      --accent-color-sidebar: #e78a5f;
+      --card-text: #311414;
+      --card-color: #e9c8ae;
+      --card-borders: solid 3px #ecc8ad;
+      --card-accents: #582626;
+      --card-link-hover: #e78a5f;
+      --sidebar-color: #311a19;
+      --sidebar-text: #f5f5f5;
+      --sidebar-link: #f5f5f5;
+      --sidebar-tabs: #311414;
+      --navbar-text: #f5f5f5;
+      --navbar-bg: #000000;
+      --post-button-bg: #6b3131;
+      --post-button-text: #ffefef;
+      --post-button-hover: #853838;
+      --post-button-hover-text: #ffffff;
+      --card-shadow: 1px 1px 5px rgba(65, 40, 40, 0.8);
 
-    --scrollbar-accent: #e78a5f;
---scrollbar-bg: #291211;
---warnings-bg: #281915;
---warnings-text: #fff;
---warnings-spoiler: #3B241F;
---warnings-spoiler-hover: #4e2626; 
---card-spoiler-bg: #ebbaa4;
---card-spoiler-hover: #e0ac94;
---card-in-card-bg: rgba(211, 169, 139, 0.6);
---card-in-card-borders:  solid 3px rgba(116, 84, 76, 0.2);
+      --scrollbar-accent: #e78a5f;
+      --scrollbar-bg: #291211;
+      --warnings-bg: #281915;
+      --warnings-text: #fff;
+      --warnings-spoiler: #3B241F;
+      --warnings-spoiler-hover: #4e2626;
+      --card-spoiler-bg: #ebbaa4;
+      --card-spoiler-hover: #e0ac94;
+      --card-in-card-bg: rgba(211, 169, 139, 0.6);
+      --card-in-card-borders: solid 3px rgba(116, 84, 76, 0.2);
 
-    --bg-image: url('../images/wasteland-bg.jpg');
-    --header-image: url('../images/fnv-banner.jpg');
-        --bg-blur: blur(0.08em);
+      --bg-image: url('../images/wasteland-bg.jpg');
+      --header-image: url('../images/fnv-banner.jpg');
+      --bg-blur: blur(0.08em);
 
-    --bg-position: center;
-    --bg-attachment: fixed;
-    --bg-size: cover;
+      --bg-position: center;
+      --bg-attachment: fixed;
+      --bg-size: cover;
 
       --bg-position-header: center;
-   --bg-size-header: cover;
-    --tooltip-bg: rgba(0, 0, 0, 0.85);
-    --tooltip-text: #fff;
+      --bg-size-header: cover;
+      --tooltip-bg: rgba(0, 0, 0, 0.85);
+      --tooltip-text: #fff;
 
-    --divider-sidebar: 1px solid rgba(163, 90, 68, 0.5);
-    --divider-card: 1px solid rgba(163, 90, 68, 0.5);
-  --divider-warnings: 1px solid rgba(136, 96, 82, 0.5);
+      --divider-sidebar: 1px solid rgba(163, 90, 68, 0.5);
+      --divider-card: 1px solid rgba(163, 90, 68, 0.5);
+      --divider-warnings: 1px solid rgba(136, 96, 82, 0.5);
 
---selection-font: rgb(250, 243, 243);
-  --selection-background: rgb(134, 91, 78);
+      --selection-font: rgb(250, 243, 243);
+      --selection-background: rgb(134, 91, 78);
 
-    --cursor-hover: url('../images/lantern-cursor.png'), auto;
-    --cursor: url('../images/raven-cursor.png'), auto;
-}
-</style>
+      --cursor-hover: url('../images/lantern-cursor.png'), auto;
+      --cursor: url('../images/raven-cursor.png'), auto;
+    }
+  </style>
 </head>
+
 <body>
 
 
-    <div class="site-layout"> 
+  <div class="site-layout">
 
-           <header>
-            <h1>Scrimtas</h1> 
-        </header>
-  
-         
-  <!--Navbar-->
-         <nav>
-                        <ul>
-                <li><a href="../index.html">Home page</a></li>
-                <li><a href="../one-pagers/guestbook.html">Guestbook</a></li>
-                <li><a href="../one-pagers/site-map.html ">Site map</a></li>
-                <li><a href="https://neocities.org/site/scrimtas">Neocities profile</a></li>
-            </ul>
-         </nav>
- <!--Navbar end-->
-    
-      <!--Sidebar-->
-        <aside id="sidebar" >
-<!--Puter-specific-->
-          <div class="mobile-hide"> 
-            <div class="sidebar-image">
-            <img class="icon" src="../images/fnv-core.jpg" alt="">
+    <header>
+      <h1>Scrimtas</h1>
+    </header>
+
+
+    <!--Navbar-->
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home page</a></li>
+        <li><a href="../one-pagers/guestbook.html">Guestbook</a></li>
+        <li><a href="../one-pagers/site-map.html ">Site map</a></li>
+        <li><a href="https://neocities.org/site/scrimtas">Neocities profile</a></li>
+      </ul>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Sidebar-->
+    <aside id="sidebar">
+      <!--Puter-specific-->
+      <div class="mobile-hide">
+        <div class="sidebar-image">
+          <img class="icon" src="../images//ocs/fnv-core.jpg" alt="">
         </div>
 
-        <div class="sidebar-info-boxes second-element"> 
-         <ul>
-             <hr>
-                <li class="leaf"><span class="sidebar-accent">General info</span> </li>
-               <ul>
-                <li class="list-square"><a  href="../one-pagers/about-me.html">About me!</a></li>
+        <div class="sidebar-info-boxes second-element">
+          <ul>
+            <hr>
+            <li class="leaf"><span class="sidebar-accent">General info</span> </li>
+            <ul>
+              <li class="list-square"><a href="../one-pagers/about-me.html">About me!</a></li>
+              <li class="list-square"><a href="../one-pagers/interests.html">Interests</a></li>
+            </ul>
+            <hr>
+            <li class="leaf"><span class="sidebar-accent">Blog</span> </li>
+            <ul>
+              <li class="list-square"><a href="../blog-posts/blog.html">Dear diary,</a> </li>
+              <li class="list-square"><a href="../media/media-general.html">Media yaps</a></li>
+              <li class="list-square"><a href="../albums/albums-general.html">Albums superhell</a></li>
+            </ul>
+            <hr>
+            <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
+            <ul>
+              <li class="list-square"><a href="../gallery/gallery-showcase.html">Art gallery</a></li>
+              <li class="list-square"><a href="../one-pagers/oc-general-page.html">My characters</a></li>
+              <li class="list-square"><a href="../one-pagers/vibes.html">Vibes checkpoint</a> </li>
+            </ul>
+            <hr>
+            <li class="leaf"><span class="sidebar-accent">Resources</span></li>
+            <ul>
+              <li class="list-square"><a href="../one-pagers/graphics-credits.html">Graphics credits</a></li>
+              <li class="list-square"><a href="../one-pagers/resources.html">Resources</a></li>
+            </ul>
+            <hr>
+          </ul>
+        </div>
+      </div>
+      <!--Puter-specific-->
+
+      <!--Mobile specific-->
+      <div class="mobile-show">
+        <details id="mobile-nav">
+          <summary id="mobile-nav-toggle">Navigation</summary>
+          <div class="sidebar-info-boxes second-element">
+            <ul>
+              <hr>
+              <li class="leaf"><span class="sidebar-accent">General info</span> </li>
+              <ul>
+                <li class="list-square"><a href="../one-pagers/about-me.html">About me!</a></li>
                 <li class="list-square"><a href="../one-pagers/interests.html">Interests</a></li>
-               </ul>
- <hr>
-                  <li class="leaf"><span class="sidebar-accent">Blog</span>  </li>
-               <ul>
-                <li class="list-square"><a href="../blog-posts/blog.html">Dear diary,</a> </li> 
+              </ul>
+              <hr>
+              <li class="leaf"><span class="sidebar-accent">Blog</span> </li>
+              <ul>
+                <li class="list-square"><a href="../blog-posts/blog.html">Dear diary,</a> </li>
                 <li class="list-square"><a href="../media/media-general.html">Media yaps</a></li>
                 <li class="list-square"><a href="../albums/albums-general.html">Albums superhell</a></li>
-               </ul>
- <hr>
-                  <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
-               <ul>
+              </ul>
+              <hr>
+              <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
+              <ul>
                 <li class="list-square"><a href="../gallery/gallery-showcase.html">Art gallery</a></li>
                 <li class="list-square"><a href="../one-pagers/oc-general-page.html">My characters</a></li>
                 <li class="list-square"><a href="../one-pagers/vibes.html">Vibes checkpoint</a> </li>
-               </ul>
- <hr>
-                  <li class="leaf"><span class="sidebar-accent">Resources</span></li>
-               <ul>
+              </ul>
+              <hr>
+              <li class="leaf"><span class="sidebar-accent">Resources</span></li>
+              <ul>
                 <li class="list-square"><a href="../one-pagers/graphics-credits.html">Graphics credits</a></li>
                 <li class="list-square"><a href="../one-pagers/resources.html">Resources</a></li>
-                </ul>
-                 <hr>
+              </ul>
+              <hr>
             </ul>
-</div>
-</div>
-<!--Puter-specific-->
+          </div>
+      </div>
+      <!--Mobile specific-->
+    </aside>
+    <!--Sidebar end-->
 
-<!--Mobile specific-->
-  <div class="mobile-show"> 
-  <details id="mobile-nav">
-<summary id="mobile-nav-toggle">Navigation</summary>
-        <div class="sidebar-info-boxes second-element"> 
-         <ul>
-             <hr>
-                <li class="leaf"><span class="sidebar-accent">General info</span> </li>
-               <ul>
-                <li class="list-square"><a  href="../one-pagers/about-me.html">About me!</a></li>
-                <li class="list-square"><a href="../one-pagers/interests.html">Interests</a></li>
-               </ul>
- <hr>
-                  <li class="leaf"><span class="sidebar-accent">Blog</span>  </li>
-               <ul>
-                <li class="list-square"><a href="../blog-posts/blog.html">Dear diary,</a> </li> 
-                <li class="list-square"><a href="../media/media-general.html">Media yaps</a></li>
-                <li class="list-square"><a href="../albums/albums-general.html">Albums superhell</a></li>
-               </ul>
- <hr>
-                  <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
-               <ul>
-                <li class="list-square"><a href="../gallery/gallery-showcase.html">Art gallery</a></li>
-                <li class="list-square"><a href="../one-pagers/oc-general-page.html">My characters</a></li>
-                <li class="list-square"><a href="../one-pagers/vibes.html">Vibes checkpoint</a> </li>
-               </ul>
- <hr>
-                  <li class="leaf"><span class="sidebar-accent">Resources</span></li>
-               <ul>
-                <li class="list-square"><a href="../one-pagers/graphics-credits.html">Graphics credits</a></li>
-                <li class="list-square"><a href="../one-pagers/resources.html">Resources</a></li>
-                </ul>
-                 <hr>
-            </ul>
-</div>
-</div>
-<!--Mobile specific-->
-</aside>
-         <!--Sidebar end-->
+    <main>
 
-         <main>
-        
-    <!-- Card 1 -->
-              <div class="card">
-                <h1>Fallout New Vegas</h1>
-                                <hr>
- <p>Can you tell I'm very normal about this game? Not finished yet, more characters are <a target="_blank" href="https://toyhou.se/Scrimtas/characters/folder:3975272"><b>in my toyhouse folder</b></a>.</p>
-           <hr>       
-        <span class="date">/ last upd. 3 nov 2026</span>  
-     </div>
+      <!-- Card 1 -->
+      <div class="card">
+        <h1>Fallout New Vegas</h1>
+        <hr>
+        <p>Can you tell I'm very normal about this game? Not finished yet, more characters are <a target="_blank"
+            href="https://toyhou.se/Scrimtas/characters/folder:3975272"><b>in my toyhouse folder</b></a>.</p>
+        <hr>
+        <span class="date">/ last upd. 3 nov 2026</span>
+      </div>
 
-               <!-- Card 1 -->
-              <div class="card">
-                <h2>I. Protagonists</h2> 
-   <hr>
-   <p class="text-center">The soldiergirl (NCR-side courier) and a sneaky kid who is here to ruin her whole career.</p>
-   <hr>
- <div class="oc-grid">
-    
-       <!-- Character  -->
-    <div class="oc-item">
-    
+      <!-- Card 1 -->
+      <div class="card">
+        <h2>I. Protagonists</h2>
+        <hr>
+        <p class="text-center">The soldiergirl (NCR-side courier) and a sneaky kid who is here to ruin her whole career.
+        </p>
+        <hr>
+        <div class="oc-grid">
 
-            <a target="_blank" href="https://toyhou.se/4432360.jack"> <img src="../images/ocs/jack-icon.jpg" alt=" "></a>
-       <div class="oc-tags">
- <a target="_blank" class="char-name" href="https://toyhou.se/4432360.jack"><h5>Jack</h5></a> 
-    
-           
-                
- 
- </div> 
+          <!-- Character  -->
+          <div class="oc-item">
+
+
+            <a target="_blank" href="https://toyhou.se/4432360.jack"> <img src="../images/ocs/jack-icon.jpg"
+                alt=" "></a>
+            <div class="oc-tags">
+              <a target="_blank" class="char-name" href="https://toyhou.se/4432360.jack">
+                <h5>Jack</h5>
+              </a>
+
+
+
+
+            </div>
+          </div>
+          <!-- Character  -->
+          <!-- Character  -->
+          <div class="oc-item">
+
+
+            <a target="_blank" href="https://toyhou.se/4432515.jeremy"> <img src="../images/ocs/jeremy-icon.jpg"
+                alt=" "></a>
+            <div class="oc-tags">
+              <a target="_blank" class="char-name" href="https://toyhou.se/4432515.jeremy">
+                <h5>Jeremy</h5>
+              </a>
+
+
+
+
+            </div>
+          </div>
+          <!-- Character  -->
+
+
+
         </div>
-       <!-- Character  -->
-    <!-- Character  -->
-    <div class="oc-item">
-    
 
-            <a target="_blank" href="https://toyhou.se/4432515.jeremy"> <img src="../images/ocs/jeremy-icon.jpg" alt=" "></a>
-       <div class="oc-tags">
- <a target="_blank" class="char-name" href="https://toyhou.se/4432515.jeremy"><h5>Jeremy</h5></a> 
-    
-           
-                
- 
- </div> 
-        </div>
-       <!-- Character  -->
+      </div>
+
+    </main>
 
 
-     
-</div>
-         
-            </div>           
-             
-      </main>  
- 
 
-       
-    
-     
 
- 
-</div>
-  
-      <footer>
-            <p>Scrimtas (2026-...) via Neocities</p>
-        </footer>
- 
+
+
+
+  </div>
+
+  <footer>
+    <p>Scrimtas (2026-...) via Neocities</p>
+  </footer>
+
 
 </body>

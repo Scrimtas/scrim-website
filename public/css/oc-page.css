@@ -551,6 +551,7 @@ width: auto;
     gap: 20px;  
     width: 100%;
     margin-bottom: 10px;
+
 }
 
  .socials-wrapper {
@@ -830,6 +831,7 @@ li.wip {
     text-align: center;
     margin: 0;
     padding: 0;
+    text-indent: 0!important;
    }
 
 
@@ -1661,3 +1663,21 @@ width: calc(20% - 15px);
     font-weight: bold;
 }
 /* oc directory-specific end */
+
+.hide {
+    display: none;
+}
+
+
+li img {
+    max-width: 100%;  
+    height: auto;    
+    display: block;  
+    margin: 0.8em auto; 
+ }
+
+ .image-illustrative {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

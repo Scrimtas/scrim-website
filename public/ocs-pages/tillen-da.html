@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrim > Oc page</title>
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../css/oc-page.css">
+    <script src="../js/lightbox.js"></script>
+
+
+    <style>
+        :root {
+            --font-main: Verdana;
+            --font-fancy: Georgia;
+            --corners: 5px;
+            --background: #E7CFBD;
+            --header-text: #fff;
+            --header-text-shadow: 3px 1px 5px rgb(87, 46, 46);
+            --header-letter-spacing: 1px;
+            --accent-color-nav: #e9946c;
+            --accent-color-sidebar: #e78a5f;
+            --card-text: #311414;
+            --card-color: #e9c8ae;
+            --card-borders: solid 3px #ecc8ad;
+            --card-accents: #582626;
+            --card-link-hover: #e78a5f;
+            --sidebar-color: #311a19;
+            --sidebar-text: #f5f5f5;
+            --sidebar-link: #f5f5f5;
+            --sidebar-tabs: #311414;
+            --navbar-text: #f5f5f5;
+            --navbar-bg: #000000;
+            --post-button-bg: #6b3131;
+            --post-button-text: #ffefef;
+            --post-button-hover: #853838;
+            --post-button-hover-text: #ffffff;
+            --card-shadow: 1px 1px 5px rgba(65, 40, 40, 0.8);
+
+            --scrollbar-accent: #e78a5f;
+            --scrollbar-bg: #291211;
+            --warnings-bg: #281915;
+            --warnings-text: #fff;
+            --warnings-spoiler: #3B241F;
+            --warnings-spoiler-hover: #4e2626;
+            --card-spoiler-bg: #e0ad93;
+            --card-spoiler-hover: rgb(224, 165, 138);
+            --card-in-card-bg: rgba(236, 193, 163, 0.6);
+            --card-in-card-borders: solid 3px rgba(138, 41, 17, 0.2);
+
+            --bg-image: url('../images/autumn-forest-da-background.jpg');
+            --header-image: url('../images/da-banner.jpg');
+            --bg-blur: blur(0.03em);
+
+            --bg-position: center;
+            --bg-attachment: fixed;
+            --bg-size: cover;
+
+            --bg-position-header: center;
+            --bg-size-header: cover;
+            --tooltip-bg: rgba(0, 0, 0, 0.85);
+            --tooltip-text: #fff;
+
+            --divider-sidebar: 1px solid rgba(163, 90, 68, 0.5);
+            --divider-card: 1px solid rgba(163, 90, 68, 0.5);
+            --divider-warnings: 1px solid rgba(136, 96, 82, 0.5);
+
+            --selection-font: rgb(39, 7, 7);
+            --selection-background: rgb(214, 155, 132);
+
+            --cursor-hover: url('../images/lantern-cursor.png'), auto;
+            --cursor: url('../images/raven-cursor.png'), auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site-layout">
+
+
+        <header>
+            <h1>Scrimtas</h1>
+        </header>
+
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home page</a></li>
+                <li><a href="../one-pagers/guestbook.html">Guestbook</a></li>
+                <li><a href="../one-pagers/site-map.html ">Site map</a></li>
+                <li><a href="https://neocities.org/site/scrimtas">Neocities profile</a></li>
+            </ul>
+        </nav>
+        <!--Navbar end-->
+
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <!--Puter-specific-->
+            <div class="mobile-hide">
+                <div class="sidebar-image">
+                    <img class="icon" src="../images/ocs/char-main.jpg">
+                </div>
+
+                <div class="sidebar-info-boxes second-element">
+                    <hr>
+
+                    <ul>
+
+
+                        <li class="leaf"><span class="sidebar-accent">Go back to...</span> </li>
+                        <ul>
+                            <li class="list-square"><a href="folder-da.html">Dragon Age OCs</a></li>
+                            <li class="list-square"><a href="../one-pagers/oc-general-page.html">Stories directory</a>
+                            </li>
+                            <li class="list-square"><a href="char-roster.html">All characters </a></li>
+                        </ul>
+                        <hr>
+
+                        <li class="leaf"><span class="sidebar-accent">Alternative versions</span> </li>
+                        <ul>
+                            <li class="list-square"><a target="_blank"
+                                    href="https://toyhou.se/4456398.tyler/4556228.anthro">Anthro</a></li>
+                        </ul>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            <!--Puter-specific-->
+
+            <!--Mobile specific-->
+            <div class="mobile-show">
+                <details id="mobile-nav">
+                    <summary id="mobile-nav-toggle">Navigation</summary>
+                    <div class="sidebar-info-boxes second-element">
+                        <hr>
+                        <ul>
+
+
+                            <li class="leaf"><span class="sidebar-accent">Go back to...</span> </li>
+                            <ul>
+                                <li class="list-square"><a class="disabled" href=" ">Setting folder</a></li>
+                                <li class="list-square"><a href="../one-pagers/oc-general-page.html">Stories
+                                        directory</a></li>
+                                <li class="list-square"><a href="char-roster.html">All characters </a></li>
+                            </ul>
+                            <hr>
+
+                            <li class="leaf"><span class="sidebar-accent">Alternative versions</span> </li>
+                            <ul>
+                                <li class="list-square"><a class="disabled" href=" ">Anthro</a></li>
+                                <li class="list-square"><a class="disabled" href=" ">Another setting</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+            </div>
+            <!--Mobile specific-->
+        </aside>
+        <!--Sidebar end-->
+
+
+        <main>
+
+
+
+
+            <!--warnings-->
+
+
+
+            <div class="warnings">
+                <div>
+                    <p class="text-center"> Profile is w.i.p. and the information is subject to change!
+                    </p>
+                    <hr>
+                </div>
+                <div>
+                    <details class="spoiler-box warnings-spoiler">
+                        <summary>
+                            <b>Content warnings</b> [click to view]
+                        </summary>
+
+                        <div class="spoiler-content">
+
+                            <hr>
+                            <ul class="square">
+                                <li>Canon-typical war, violence and death topics</li>
+                                <hr>
+                                <li>Xenophobia and oppression of various flavours, also canon-typical though :) </li>
+                                <hr>
+                                <li>Orphan character</li>
+                                <hr>
+                                <li>Mental illness, depression specifically</li>
+                                <hr>
+                                <li>Character death, (implied, de facto) suicide</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <hr>
+                    <span class="date-spoiler">/ last upd. 5 nov 2026</span>
+
+                </div>
+
+            </div>
+
+            <!--warnings end-->
+
+            <!-- Card  -->
+            <div class="card oc">
+                <!-- Links section -->
+                <hr>
+                <div class="centering-wrapper">
+                    <p class="socials">
+                        <b><i><a href="https://toyhou.se/4456398.tyler/5048146.tillen-dragon-age"
+                                    target="_blank">Toyhouse</a> </i></b>
+                    </p>
+                    <hr>
+                    <p class="quote">«<i>There are twenty years to go, a golden age, I know, <br>
+                            But all will pass, and end too fast, you know</i>»<br>
+                        <span class="small"><a href="https://www.youtube.com/watch?v=3hTFcwdyWX4"
+                                target="_blank">Placebo — Twenty Years</a></span>
+                    </p>
+                </div>
+
+                <hr>
+                <!-- Links section end -->
+
+                <div class="profile-layout">
+                    <div class="profile-image-wrapper">
+                        <img src="../images/ocs/tillen-icon.jpg" alt=" " class="profile-image">
+                    </div>
+
+                    <table class="stats-table">
+                        <tr>
+                            <th>Name</th>
+                            <td><b>Tillen</b></td>
+                        </tr>
+                        <tr>
+                            <th>AKA</th>
+                            <td>Tillen Amell, Till, Ty
+                                <hr>
+                                The (Grey) Warden, The Hero of Ferelden
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Gender | Sexuality</th>
+                            <td>Male | Homosexual</td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td>Early 20s, I think he was 22 y.o. when he died</td>
+                        </tr>
+                        <tr>
+                            <th>Race</th>
+                            <td>Human</td>
+                        </tr>
+                        <tr>
+                            <th>Ethnicity</th>
+                            <td> Anderfelian-Fereldenian </td>
+                        </tr>
+                        <tr>
+                            <th>Class</th>
+                            <td> Mage, Ice mage mostly with later Blood Mage specialization </td>
+                        </tr>
+                        <tr>
+                            <th>Occupation</th>
+                            <td>Well. The Hero of Ferelden?</td>
+                        </tr>
+                        <tr>
+                            <th>Setting</th>
+                            <td><b>Dragon Age Origins</b> </td>
+                        </tr>
+                        <tr>
+                            <th>Role</th>
+                            <td>Protagonist</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!--about section-->
+                <div class="card-in-card">
+                    <h4>About</h4>
+                    <hr>
+                    <p class="traits">+ <i>Sharp-witted, charismatic, confident, dedicated, principled</i> +
+                        <br>
+                        = <i>Erratic, restless, upfront, risky, idealistic, free-spirited, intense, daring </i> =
+                        <br>
+                        - <i>Stubborn, vindictive, judgemental, irritable, impatient, quarrelsome, selfish</i> -
+                    </p>
+                    <hr>
+                    <p class="text-center"><b>A restless young man, who wanted to become a legend so bad.</b></p>
+                    <hr>
+
+                    <div class="aes-pics hide">
+                        <img style="width:200px;height:78px;" src="../images/ocs/jack-aes-3.jpg" alt=" ">
+                        <img style="width:200px;height:78px;" src="../images/ocs/jack-aes-3.jpg" alt=" ">
+                        <img style="width:200px;height:78px;" src="../images/ocs/jack-aes-3.jpg" alt=" ">
+                        <hr>
+                    </div>
+
+
+                    <p>Basically my quite dusty and Extremely dramatic Warden. I would write him an appropriate 'about'
+                        section, hopefully soon, but for now it is what it is
+                    </p>
+
+                    <hr>
+                    <details class="spoiler-box hide">
+                        <summary>
+                            <b>In-depth lore</b> [click to view]
+                        </summary>
+
+                        <div class="spoiler-content  ">
+                            <hr>
+                            <h5 class="bio">Subtitle</h5>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae delectus quod nulla
+                                sapiente dicta ipsa quo praesentium saepe minus in? Veniam aliquid dolore eos laudantium
+                                ipsa, minus numquam accusamus inventore!</p>
+                            <hr>
+                        </div>
+                    </details>
+                </div>
+                <!--about section end-->
+
+                <!--design section-->
+                <div class="card-in-card">
+                    <h4>Design notes</h4>
+                    <hr>
+                    <p class="text-center"><b><i> <a href="https://toyhou.se/4456398.tyler/4556228.anthro"
+                                    target="_blank">Anthro form</a>
+                            </i></b></p>
+                    <hr>
+
+                    <ul class="square">
+                        <li><b>Build notes:</b> 190 cm | 6' 3'', both gangly and scrawny.</li>
+                        <hr>
+                        <li>Has a very pale skin tone.</li>
+                        <hr>
+                        <li><b>Facial features:</b> Oval-shaped yet very 'slim' face, thin long nose, average (and often
+                            frowned) eyebrows, dark brown eyes with prominent eyebags.
+                            I'd say the closest irl person to him I have on my
+                            mind is a young Alain Delon (not ctrl c-ctrl v case, but yeah). </li>
+                        <hr>
+
+                        <li><b>Tattoo</b> This one default facial tattoo, lmao. A complete freestyle by Mars, but he
+                            likes
+                            that the left-sided markings look like a bird :з <br>
+                            <div class="image-illustrative">
+                                <img src="../images/ocs/tillen-da-tattoo-refs.jpg" alt="Facial tattoo reference">
+                            </div>
+                        </li>
+                        <hr>
+
+                        <li><b>Scars:</b> Nothing specified, although he obviously has them. Feel free to draw him with
+                            random scars/scratches on his body.</li>
+                        <hr>
+                        <li><b>Hair:</b> Thick straight dark brown hair, combed back neatly. He puts in too many effort
+                            for his haircut to look flawless. </li>
+                        <hr>
+                        <li><b>Clothing style:</b></li>
+                        <ul class="square">
+                            <li> I think my favorite option is some variation of grey warden mage robe (say something
+                                like <a href="https://dragonage.fandom.com/wiki/Bethany%27s_Grey_Warden_Robes"><b>grey
+                                        warden!Bethany Hawke</b></a> has), but generally any mage robe or overall any
+                                medieval-passing clothing until its like an actual armor.</li>
+                            <li> He very obviously has a preference for blue shades. He also likes ✨dressing✨ fancy and
+                                looking great, so of course he enjoys pretty embroidery, and also enjoys capes and
+                                standing collars.</li>
+                        </ul>
+                        <hr>
+                        <li><b>Impression / Common mannerisms:</b> Cold, pretentious and smug, I think? He appears to be
+                            a very self-confident
+                            and bold (brash even) person. He fixes his hair very often, especially as a self-soothing
+                            gesture (so yeah he absolutely will still do it whe covered in blood/mud and on a verge of
+                            a mental breakdown). </li>
+                        <hr>
+                        <li><b>Weapon notes:</b> He uses a stave of a completely random design. I don't think he gets
+                            attached to them and replaces them very easily. </li>
+                        <hr>
+                        <li>Feel free to draw him with body hair and generally not-perfect skin if it fits your
+                            artstyle!</li>
+                        <hr>
+                        <li>There's no need to colorpick from his references, just try to keep the approximate
+                            colors/shades ratio recognizable and you cool.</li>
+
+                    </ul>
+                    <hr>
+
+                    <details class="spoiler-box hide">
+                        <summary>
+                            <b>Drawing 'rules'</b><br>
+                            <span>[check this if you plan to draw them]</span>
+                        </summary>
+
+                        <div class="spoiler-content">
+                            <hr>
+                            <p class="text-center">Overall my boundaries regarding fanart are always OMG PLEASE DO, I'd
+                                be super flattered and happy! Both 'favorite' and 'okay' sections are for situation
+                                where you'd like to draw me something but struggle with ideas, so overall I only ask you
+                                to make sure you read 'ask' and 'don't' sections, that <i>are</i> in fact important to
+                                me. </p>
+                            <hr>
+                            <h5>Favorite things ever</h5>
+                            <hr>
+                            <ul class="lungs">
+                                <li> Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+
+                            </ul>
+
+                            <h5>Absolutely okay</h5>
+                            <hr>
+                            <ul class="star">
+                                <li> Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+
+                            </ul>
+
+                            <h5>It depends / ask?</h5>
+                            <hr>
+                            <ul class="ask">
+                                <li> Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+
+                            </ul>
+
+                            <h5>Please don't</h5>
+                            <hr>
+                            <ul class="no">
+                                <li> Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+                                <li>Content</li>
+                                <hr>
+
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+                <!--design section end-->
+
+
+
+
+
+
+                <!-- Preferences Section -->
+                <div class="likes-dislikes-wrapper">
+
+                    <div class="card-in-card likes-box">
+                        <h4>Likes</h4>
+                        <hr>
+                        <ul class="square">
+                            <li>He's quite fond of cats.</li>
+                            <li>Aurafarming and looking cool 😎</li>
+                            <li>Flowers. Plants and trees in general, I think, but the flowers are especially pretty.
+                            </li>
+                            <li>Folklore, stories and legends.</li>
+                            <li>Journaling (THE WHINER)</li>
+                            <li>Birds</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="card-in-card dislikes-box">
+                        <h4>Dislikes</h4>
+                        <hr>
+                        <ul class="square">
+                            <li>Dogs, canines in general. He's Very Open about not being a fan of mabaris.</li>
+                            <li>Anything associated with the church, templars and their support. He had an obvious bird
+                                in a cage trauma and definitely experience violence from several tower templars for
+                                being a Very inconvenient young mage to deal with and he's overall very passionate about
+                                his ideals and maximalistic, so of course his vision of the mages and templars situation
+                                is very black-and-white.</li>
+                            <li>Being ill, although his immunity, well. Isn't very great, I would say.</li>
+                            <li>Darkness. And confined spaces.</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Preferences Section end -->
+
+                <!-- Connections Section -->
+                <div class="card-in-card connections-box">
+                    <h4>Connections</h4>
+                    <hr>
+
+                    <!-- Character   -->
+                    <div class="connection-item">
+                        <img src="../images/icon-placeholder-2.jpg" alt=" " class="connection-image">
+                        <div class="connection-text">
+                            <h5 class="connection-name"><a href="" target="_self"><b>Karr</b></a></h5>
+                            <p class="connection-relation">best friend</p>
+                            <p class="connection-desc">The rebellious dalish annoyed him immensely when they first met.
+                                Admittedly because she felt like his own twisted reflection which he didn't particularly
+                                enjoy. They bonded with time, though, to the point by the end of the plot she was
+                                probably his closest person ever. He appreciated that she never tried to 'influence' him
+                                and respected his choices, even if it was obvious how she personally felt about some of
+                                them. I think he saw her as his troublesome but cool elder sister.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <!-- Character   -->
+                    <div class="connection-item">
+                        <img src="../images/icon-placeholder-2.jpg" alt=" " class="connection-image">
+                        <div class="connection-text">
+                            <h5 class="connection-name"><a href="" target="_self"><b>TBN</b></a> </h5>
+                            <p class="connection-relation">friend, partner?</p>
+                            <p class="connection-desc">He was a good person. Tillen cared about him deeply, but nether
+                                bothered to be particularly honest with him, especially about his further life plans.
+                                About not having any, specifically. It must have really broken his heart when on their
+                                last meeting before the Archdemon final battle his troubling bittersweet speech was
+                                hardly to interpret other than 'You're probably the best person I ever met but we're
+                                breaking up rn, hope you'll find someone who deserves your love, good luck &lt;з', and
+                                of course [TBN] lacked the context only Karr and Morrigan were aware of. And this
+                                conversation was the last time anyone saw Tiller alive.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Character   -->
+                    <!-- Character   -->
+                    <div class="connection-item">
+                        <img src="../images/icon-placeholder-2.jpg" alt=" " class="connection-image">
+                        <div class="connection-text">
+                            <h5 class="connection-name"><a href="" target="_self"><b>Mars</b></a> </h5>
+                            <p class="connection-relation">friend</p>
+                            <p class="connection-desc">Marcia was his fellow tower mage, senior to him both in age and
+                                her status. She also was the one to get his a facial tattoo, but they barely interacted
+                                much otherwise, and even if they did, Mars' apathetic
+                                'it is what it is' attitude would probably clash with Till's burning rebellion. It was a
+                                weird and messy coincidence both of them were dragged into the Jowan drama, and both
+                                were questionably rescued via being recruited as potential grey wardens. Something
+                                Marcia was very vocally Not happy about. Which, expectably, made their relationships
+                                rather tensed and hostile at first, but they learnt to work together and appreciate each
+                                other as an ally. They generally got along much better with time and actually became
+                                friends. Tillen really appreciated her magic-related skills and knowledge, obviously
+                                more refined and thorough than his own. </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Character   -->
+
+                    <p class="text-center">Feel free to draw him interacting with your characters if you want!</p>
+                </div>
+
+
+                <!--playlist-->
+                <div class="card-in-card hide">
+                    <h4>Playlist</h4>
+                    <hr>
+                    <div class="playlist-container">
+
+
+
+
+                        <!-- Song  -->
+                        <div class="song">
+                            <div class="song-left">
+                                <div class="song-title">
+                                    <b><a href="https://www.youtube.com/watch?v=ohFg6O9r8U4">Angelo Badalamenti — Laura
+                                            Palmer's Theme</a></b>
+                                </div>
+
+                                <audio controls class="song-audio">
+                                    <source
+                                        src="https://od.lk/s/NTJfNTExNTUzNzJfSDk0UEw/Angelo%20Badalamenti%20-%20Laura%20Palmer%27s%20Theme%20-%20Love%20Theme%20from%20Twin%20Peaks.mp3"
+                                        type="audio/mpeg">
+                                </audio>
+                            </div>
+
+                            <div class="song-lyrics">
+                                <i>[Instumental]</i>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Song  -->
+
+
+                    </div>
+                </div>
+
+                <!--trivia section-->
+                <div class="card-in-card">
+                    <h4>Trivia</h4>
+                    <hr>
+                    <ul class="square">
+                        <li><b>Motifs/associations </b> for him are ice, color blue, jackdaws, statues. The sense of
+                            distance and alienation, and also longing. Urge to burn bright and to show-them-all (to do
+                            things just in
+                            spite). Also the bird in the cage and any other such tower and feeling like a prisoner kind
+                            of symbolism. Mother love, except he doesn't remember his mother so it's just a warm
+                            idolized image in his head. Forge-me-nots, maybe?</li>
+                        <hr>
+                        <li><b>Inspiration [kinlist]:</b> </li>
+                        <ul class="square">
+                            <li>
+                                <!--character-->
+                                <div class="custom-tooltip" tabindex="0">
+                                    <span class="character-name">Enjolras</span>,
+                                    <span class="custom-tooltip-text" role="tooltip">
+                                        Les Misérables
+                                    </span>
+                                </div>
+                                <!--character-->
+                                <!--character-->
+                                <div class="custom-tooltip" tabindex="0">
+                                    <span class="character-name">Andrey Stamatin</span>,
+                                    <span class="custom-tooltip-text" role="tooltip">
+                                        Pathologic 2
+                                    </span>
+                                </div>
+                                <!--character-->
+                                <!--character-->
+                                <div class="custom-tooltip" tabindex="0">
+                                    <span class="character-name">Alexander Hamilton</span>,
+                                    <span class="custom-tooltip-text" role="tooltip">
+                                        Hamilton the Musical
+                                    </span>
+                                </div>
+                                <!--character-->
+                                <!--character-->
+                                <div class="custom-tooltip" tabindex="0">
+                                    <span class="character-name">Elsa</span>
+                                    <span class="custom-tooltip-text" role="tooltip">
+                                        Frozen
+                                    </span>
+                                </div>
+                                <!--character-->
+                            </li>
+                            <li> I'd say he was vaguely influenced by Bo Burnham and (sigh) Morrissey, both their music
+                                and some parts of their public image/character.</li>
+                        </ul>
+                        <hr>
+
+                        <li> Tillen was created in 2017, during my not historically first dao playthrough, but the first
+                            one when I was Serious about the game, and the first one where my character actually
+                            mattered to me.</li>
+                        <ul class="square">
+                            <li>His name originally was Tilen, which was basically a Daylen aka the default Amell name
+                                with its first letter changed (in russian adaption of the game though. Like,
+                                Дайлен-Тайлен, and I didn't check how the name looked on English until now hfjghhf),
+                                then me and my friend who we back then shipped our dao protagonists with, were thinking
+                                about modern au where I adapted his name to Tyler, so his dao version named was
+                                transformed into Tylen, to make at least any parallel in addition to just same first
+                                letter of the name. I wasn't fully content about the whole Tilen and Tylen name
+                                since the Tyler au became a thing, so basically ..Well, today (4 nov 2026), he
+                                existed as Tyler in all verses including dao, which still felt somewhat off either. Then
+                                something randomly clicked in my head and I've came up with Tillen (and Till, which is
+                                from this point on Tyler's modern version name he later officially changed, which made
+                                So Much more sense as he was already (half) german) :]
+                            </li>
+                            <li>He was originally supposed to be that tragically dead Hero of Ferelden
+                                character, because I back then felt <i>extremely</i> uncomfortable about the whole
+                                Morrigan ritual child plotline (im chill about it now though) And I was an angsty teen
+                                so I was obsessed with the concept of main character dying in the end. So, a very meta
+                                reasons for this decision. Then the mentioned earlier ship with friend's Surana
+                                happened, and he really liked Tillen as a character, so I've canceled his final death so
+                                our ocs would have a happy ever after (well, as happy as the grey wardens could be) and
+                                Till got his 'dying is easy, young man, living is harder' kind of character development.
+                                Our characters plotlines are no longer connected anyhow, though, so I'm back to the
+                                original concept, with only exception it does have an actual watsonian perspective
+                                reason, Finally.
+                            </li>
+                            <li>Also back then he used to have the Shapeshifter mage specialization and could turn into
+                                a wolf as a nod to his (errr admittedly from my current perspective super flanderizing)
+                                modern version admiration for wolves and anything wolf-related. Which doesn't make much
+                                sense to me anymore, so I've retconned that part.
+                            </li>
+                        </ul>
+
+                    </ul>
+                    <hr>
+                </div>
+                <!--trivia section end-->
+
+                <!--gallery section-->
+                <div class="card-in-card hide">
+                    <h4>Gallery</h4>
+                    <hr>
+                    <p class="text-center">See more art on their <a href="" target="_blank">Toyhouse</a></p>
+                    <hr>
+
+
+                    <!-- lightbox thing-->
+                    <section class="art-gallery" aria-label="Character artwork">
+
+                        <div class="gallery-grid">
+
+                            <!-- Art-->
+                            <button class="gallery-thumb" type="button" data-full="../images/lighthouse-banner.jpg"
+                                data-caption="Something something. Artwork by @">
+
+                                <!--Thumbnail-->
+                                <img src="../images/icon-placeholder-2.jpg" alt=" ">
+                                <!--Thumbnail end-->
+
+                            </button>
+                            <!-- Art end-->
+
+                            <!-- Art-->
+                            <button class="gallery-thumb" type="button" data-full="../images/icon-placeholder.jpg"
+                                data-caption="Something something">
+                                <!--Thumbnail-->
+
+                                <img src="../images/icon-placeholder-2.jpg" alt=" ">
+                                <!--Thumbnail end-->
+
+                            </button>
+                            <!-- Art end-->
+
+                        </div>
+                    </section>
+
+
+                    <!-- The lightbox thing-->
+                    <dialog class="art-lightbox" id="art-lightbox" aria-label="Artwork preview">
+
+                        <div class="lightbox-panel">
+
+                            <div class="lightbox-controls">
+                                <button type="button" id="lightbox-close">
+                                    Close
+                                </button>
+                            </div>
+
+                            <!--loading/placeholder image-->
+                            <img id="lightbox-image" src="../images/twin-peaks-bird.jpg" alt="">
+                            <!--loading/placeholder image-->
+
+                            <p id="lightbox-caption" class="lightbox-caption"></p>
+
+                        </div>
+                    </dialog>
+                    <!--lightbox end-->
+                </div>
+                <!--gallery section end-->
+                <hr>
+                <span class="date"> <i> Sidebar image credits to Disco Elysium (2019)</i></span>
+
+            </div>
+
+        </main>
+    </div>
+
+
+
+
+    <footer>
+        <p>Scrimtas (2026-...) via Neocities</p>
+    </footer>
+    </div>
+
+
+</body>
+
+</html>
