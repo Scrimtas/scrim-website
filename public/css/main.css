@@ -825,3 +825,23 @@ h5.updates  {
     display: inline;
     padding: 0; 
 }
+.webring-container {
+    display: flex;
+    flex-direction: column; /* THIS forces them to stack vertically */
+    align-items: center;    /* THIS centers them perfectly in the middle */
+    gap: 30px;              /* Adds space between the top ring and bottom ring */
+    margin: 30px auto;      
+    width: 100%;
+}
+
+/* Ensures the individual webring widgets don't stretch weirdly */
+.webring-container > div {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the table inside its container */
+}
+
+/* Fixes the weird indentation on the CDRing text */
+.cdr-widget p {
+    text-indent: 0 !important;
+}
