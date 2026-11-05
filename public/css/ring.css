@@ -60,3 +60,80 @@
 #tga-webring-of-suok a {
     color: brown
 }
+
+
+
+
+
+
+
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (и’њ) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #webringid with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+
+#cdr {
+  width: 200px;
+  margin: 0 auto;
+  padding: 6px;
+}
+
+#cdr table {
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+#cdr table tr td {
+  padding: 1px; 
+}
+
+#cdr .webring-prev {
+  text-align: right;
+}
+
+#cdr .webring-info {
+  text-align: center;
+}
+
+#cdr .webring-next {
+  text-align: left;
+}
+
+#cdr .webring-links {
+  font-size: small;
+}
+
+
+#cdr p {
+  margin: 0.3em 0; 
+}
+
+.cdr-badge {
+  display: block;
+  margin: 0.2em auto; 
+  max-width: 100px;
+  height: auto;
+}
+
+.cdr-widget {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0; 
+  line-height: 1.2; 
+}
+
+.cdr-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  margin: 0.2em 0; 
+}
+
+.cdr-nav .cdr-prev,
+.cdr-nav .cdr-next {
+  font-weight: bold;
+  text-decoration: none;
+}
