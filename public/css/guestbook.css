@@ -348,6 +348,10 @@ footer {
 }
  
 
+footer hr {
+    border: 0.02em solid rgba(80, 79, 78, 0.5)!important;
+}
+
 hr {
    
     margin:0.7em 0;
