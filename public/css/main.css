@@ -849,12 +849,8 @@ h5.updates  {
     margin: 0 auto;  
 }
 
- #tmaring table {
-    width: auto !important; 
-    margin: 0 auto;
-}
-
-#tmaring {
+ 
+ #tmaring {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -863,14 +859,18 @@ h5.updates  {
 
  #tmaring img {
     display: block !important;
-    margin: 0 auto 8px auto !important;  
+    margin: 0 auto 10px auto !important;
+}
+
+ #tmaring a {
+    display: inline-block !important;
+    margin: 0 5px !important;  
 }
 
  #tmaring table,
 #tmaring tbody,
 #tmaring tr,
 #tmaring td {
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
+    display: revert !important;
+    width: auto !important;
 }
