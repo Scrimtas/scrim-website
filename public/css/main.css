@@ -853,3 +853,24 @@ h5.updates  {
     width: auto !important; 
     margin: 0 auto;
 }
+
+#tmaring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ #tmaring img {
+    display: block !important;
+    margin: 0 auto 8px auto !important;  
+}
+
+ #tmaring table,
+#tmaring tbody,
+#tmaring tr,
+#tmaring td {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+}
