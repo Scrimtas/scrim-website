@@ -828,27 +828,30 @@ h5.updates  {
     display: inline;
     padding: 0; 
 }
-.webring-container {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;    
-    gap: 30px;               
-    margin: 30px auto;      
-    width: 100%;
-}
- 
+
  .cdr-widget p {
     text-indent: 0 !important;
+}
+.webring-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px auto;
+    width: 100%;
 }
 
 .webring-container > div {
     display: flex;
     justify-content: center;
-    width: fit-content; 
+    align-items: center; 
+    flex: 0 0 auto;
+    width: fit-content;
     max-width: 100%;
-    margin: 0 auto;  
+    margin: 0 !important;
 }
-
  
  #tmaring {
     display: flex;

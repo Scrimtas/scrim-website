@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrim > OC folder > Space Voyage</title>
+
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../css/oc-page.css">
+    <script src="../js/gallery-showcase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        :root {
+            --font-main: Verdana;
+            --font-fancy: Georgia;
+            --corners: 5px;
+            --background: #1e1e26;
+            --header-text: #fff;
+            --header-text-shadow: 3px 1px 5px rgb(87, 46, 46);
+            --header-letter-spacing: 1px;
+            --accent-color-nav: #acacd4;
+            --accent-color-sidebar: #acacd4;
+            --card-text: #ececf9;
+            --card-color: #1e1e26;
+            --card-borders: solid 3px #1f1f2b;
+            --card-accents: #f4c290;
+            --card-link-hover: #e78a5f;
+            --sidebar-color: #1e1e26;
+            --sidebar-text: #f5f5f5;
+            --sidebar-link: #f5f5f5;
+            --sidebar-tabs: #311414;
+            --navbar-text: #f5f5f5;
+            --navbar-bg: #000000;
+            --post-button-bg: #6b3131;
+            --post-button-text: #ffefef;
+            --post-button-hover: #853838;
+            --post-button-hover-text: #ffffff;
+            --card-shadow: 1px 1px 5px rgba(65, 40, 40, 0.8);
+
+            --scrollbar-accent: #acacd4;
+            --scrollbar-bg: #23192e;
+            --warnings-bg: #281915;
+            --warnings-text: #fff;
+            --warnings-spoiler: #3B241F;
+            --warnings-spoiler-hover: #4e2626;
+            --card-spoiler-bg: #1e1e26;
+            --card-spoiler-hover: #20202c;
+            --card-in-card-bg: #32323D;
+            --card-in-card-borders: solid 3px #4B4B68;
+
+            --bg-image: url('../images/space-voyage-bg.jpg');
+            --header-image: url('../images/space-voyage-banner.jpg');
+            --bg-blur: blur(0.07em);
+
+            --bg-position: center;
+            --bg-attachment: fixed;
+            --bg-size: cover;
+
+            --bg-position-header: center;
+            --bg-size-header: cover;
+            --tooltip-bg: rgba(0, 0, 0, 0.85);
+            --tooltip-text: #fff;
+
+            --divider-sidebar: 1px solid #4B4B68;
+            --divider-card: 1px solid #4c4c5c;
+            --divider-warnings: 1px solid rgba(136, 96, 82, 0.5);
+
+            --selection-font: #270707;
+            --selection-background: #acacd4;
+
+            --cursor-hover: url('../images/lantern-cursor.png'), auto;
+            --cursor: url('../images/raven-cursor.png'), auto;
+        }
+
+        li.leaf {
+            list-style: none;
+
+            padding-left: 2rem;
+            background-image: url("../images/space-helmet.png");
+            background-size: 1.6rem 1.6rem;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="site-layout">
+
+        <header>
+            <h1>Scrimtas</h1>
+        </header>
+
+
+        <!--Navbar-->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home page</a></li>
+                <li><a href="../one-pagers/guestbook.html">Guestbook</a></li>
+                <li><a href="../one-pagers/site-map.html ">Site map</a></li>
+                <li><a href="https://neocities.org/site/scrimtas">Neocities profile</a></li>
+            </ul>
+        </nav>
+        <!--Navbar end-->
+
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <!--Puter-specific-->
+            <div class="mobile-hide">
+                <div class="sidebar-image">
+                    <img class="icon" src="../images/ocs/space-core.jpg" alt="">
+                </div>
+
+                <div class="sidebar-info-boxes second-element">
+                    <ul>
+                        <hr>
+                        <li class="leaf"><span class="sidebar-accent">General info</span> </li>
+                        <ul>
+                            <li class="list-square"><a href="../one-pagers/about-me.html">About me!</a></li>
+                            <li class="list-square"><a href="../one-pagers/interests.html">Interests</a></li>
+                        </ul>
+                        <hr>
+                        <li class="leaf"><span class="sidebar-accent">Blog</span> </li>
+                        <ul>
+                            <li class="list-square"><a href="../blog-posts/blog.html">Dear diary,</a> </li>
+                            <li class="list-square"><a href="../media/media-general.html">Media yaps</a></li>
+                            <li class="list-square"><a href="../albums/albums-general.html">Albums superhell</a></li>
+                        </ul>
+                        <hr>
+                        <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
+                        <ul>
+                            <li class="list-square"><a href="../gallery/gallery-showcase.html">Art gallery</a></li>
+                            <li class="list-square"><a href="../one-pagers/oc-general-page.html">My characters</a></li>
+                            <li class="list-square"><a href="../one-pagers/vibes.html">Vibes checkpoint</a> </li>
+                        </ul>
+                        <hr>
+                        <li class="leaf"><span class="sidebar-accent">Resources</span></li>
+                        <ul>
+                            <li class="list-square"><a href="../one-pagers/graphics-credits.html">Graphics credits</a>
+                            </li>
+                            <li class="list-square"><a href="../one-pagers/resources.html">Resources</a></li>
+                        </ul>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+            <!--Puter-specific-->
+
+            <!--Mobile specific-->
+            <div class="mobile-show">
+                <details id="mobile-nav">
+                    <summary id="mobile-nav-toggle">Navigation</summary>
+                    <div class="sidebar-info-boxes second-element">
+                        <ul>
+                            <hr>
+                            <li class="leaf"><span class="sidebar-accent">General info</span> </li>
+                            <ul>
+                                <li class="list-square"><a href="../one-pagers/about-me.html">About me!</a></li>
+                                <li class="list-square"><a href="../one-pagers/interests.html">Interests</a></li>
+                            </ul>
+                            <hr>
+                            <li class="leaf"><span class="sidebar-accent">Blog</span> </li>
+                            <ul>
+                                <li class="list-square"><a href="../blog-posts/blog.html">Dear diary,</a> </li>
+                                <li class="list-square"><a href="../media/media-general.html">Media yaps</a></li>
+                                <li class="list-square"><a href="../albums/albums-general.html">Albums superhell</a>
+                                </li>
+                            </ul>
+                            <hr>
+                            <li class="leaf"><span class="sidebar-accent">Creative corner</span></li>
+                            <ul>
+                                <li class="list-square"><a href="../gallery/gallery-showcase.html">Art gallery</a></li>
+                                <li class="list-square"><a href="../one-pagers/oc-general-page.html">My characters</a>
+                                </li>
+                                <li class="list-square"><a href="../one-pagers/vibes.html">Vibes checkpoint</a> </li>
+                            </ul>
+                            <hr>
+                            <li class="leaf"><span class="sidebar-accent">Resources</span></li>
+                            <ul>
+                                <li class="list-square"><a href="../one-pagers/graphics-credits.html">Graphics
+                                        credits</a></li>
+                                <li class="list-square"><a href="../one-pagers/resources.html">Resources</a></li>
+                            </ul>
+                            <hr>
+                        </ul>
+                    </div>
+            </div>
+            <!--Mobile specific-->
+        </aside>
+        <!--Sidebar end-->
+
+        <main>
+
+            <!-- Card 1 -->
+            <div class="card">
+                <h1>Space voyage</h1>
+                <hr>
+                <p>A love letter to the Earth, the story about wanderlust and friendship and a pseudo documentary about
+                    a
+                    fictional odd cartoon that was canceled after season one and ended on the wildest cliff-hanger
+                    possible. I love the theme of the creator and the creation and their
+                    relationships &lt;з</p>
+                <hr>
+                <span class="date">/ last upd. 8 nov 2026</span>
+            </div>
+
+            <!-- Card 1 -->
+            <div class="card">
+                <h2>I. The main cast</h2>
+                <hr>
+                <p class="text-center"> I have few other concepts on my mind and the
+                    'meta' author of the story obviously to design, but for now it's just the three of them :р</p>
+                <hr>
+                <div class="oc-grid">
+
+                    <!-- Character  -->
+                    <div class="oc-item">
+
+
+                        <a target="_blank" href="https://toyhou.se/26757010.voyager-1"> <img
+                                src="../images/ocs/voyager-I-icon.jpg" alt=" "></a>
+                        <div class="oc-tags">
+                            <a target="_blank" class="char-name" href="https://toyhou.se/26757010.voyager-1">
+                                <h5>Voyager-I</h5>
+                            </a>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- Character  -->
+
+                    <!-- Character  -->
+                    <div class="oc-item">
+
+
+                        <a target="_blank" href="https://toyhou.se/28597302.amethyst-8xs/38120298.comet"> <img
+                                src="../images/ocs/comet-icon.jpg" alt=" "></a>
+                        <div class="oc-tags">
+                            <a target="_blank" class="char-name"
+                                href="https://toyhou.se/28597302.amethyst-8xs/38120298.comet">
+                                <h5>Comet</h5>
+                            </a>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- Character  -->
+                    <!-- Character  -->
+                    <div class="oc-item">
+
+
+                        <a target="_blank" href="https://toyhou.se/38363732.microcline/38453221.voyager-2"> <img
+                                src="../images/ocs/voyager-II-icon.jpg" alt=" "></a>
+                        <div class="oc-tags">
+                            <a target="_blank" class="char-name"
+                                href="https://toyhou.se/38363732.microcline/38453221.voyager-2">
+                                <h5>Voyager-II</h5>
+                            </a>
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- Character  -->
+
+
+                </div>
+
+            </div>
+            <!-- Card 1 -->
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>Scrimtas (2026), hosted on Neocities!
+            <hr>
+            <i>scrimtas@gmail.com</i>
+
+            <i>
+                <a target="_blank" href="https://toyhou.se/Scrimtas">Toyhou.se</a> <a target="_blank"
+                    href="https://scrimtas.tumblr.com/" target="_blank">Tumblr</a> <a
+                    href="https://www.deviantart.com/scrimtas">DeviantArt</a> <a href="https://t.me/scrimtas"
+                    target="_blank">Telegram</a>
+            </i>
+        </p>
+    </footer>
+
+
+</body>
