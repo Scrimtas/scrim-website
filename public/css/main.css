@@ -877,3 +877,7 @@ h5.updates  {
     display: revert !important;
     width: auto !important;
 }
+
+a.focus {
+    font-weight: 600;
+}

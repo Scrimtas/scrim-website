@@ -117,6 +117,11 @@ aside #sidebar { grid-area: sidebar; }
  main { grid-area: main; }
 footer { grid-area: footer; }
 
+
+a:hover, a:focus-visible {
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
         font-family:var(--font-fancy);
         text-align: center;
@@ -467,7 +472,7 @@ hr {
     display:flex;
     justify-content: center;
     margin:5px;
-    
+ 
   }
 
  .sidebar-image {
@@ -1000,3 +1005,17 @@ border-radius: var(--corners);
 border-radius: var(--corners);
    }
 /* bootstrap fixes */
+
+a.focus {
+    font-weight: 600;
+}
+
+img.media {
+    height: 250px;
+max-width: auto;
+
+@media (max-width: 800px) {
+        height:60%;
+    }
+ 
+ }

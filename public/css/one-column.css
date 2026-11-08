@@ -1006,3 +1006,7 @@ div.card-in-card {
     margin-top: 20px;
     border-radius: var(--corners);
 }
+
+a.focus {
+    font-weight: 600;
+}

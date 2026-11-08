@@ -850,3 +850,7 @@ li.wip {
    }
  
    /* bootstrap fixes */
+
+   a.focus {
+    font-weight: 600;
+}
