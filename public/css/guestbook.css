@@ -31,7 +31,7 @@
     --post-button-text: #ffefef;
      --post-button-hover: #853838;
 --post-button-hover-text: #ffffff;
-
+  --mobile-toggle: #492423;
 
  --divider-card: 1px solid #bfccdd;
 
@@ -174,7 +174,7 @@ color: #adadac;
 .mobile-show {
 
 #mobile-nav-toggle {
-background-color: #522518;
+background-color: var(--mobile-toggle);
 border-radius: var(--corners);
 padding: 0.5em;
 width: 80vw;

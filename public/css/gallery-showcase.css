@@ -54,7 +54,7 @@
     --bg-size: cover;
     --tooltip-bg: rgba(0, 0, 0, 0.85);
     --tooltip-text: #fff;
-
+  --mobile-toggle: #492423;
 
     --divider-sidebar: 1px solid rgba(163, 90, 68, 0.5);
     --divider-card: 1px solid rgba(163, 90, 68, 0.5);
@@ -263,7 +263,7 @@ color: #adadac;
 .mobile-show {
 
 #mobile-nav-toggle {
-background-color: #522518;
+background-color: var(--mobile-toggle);
 border-radius: var(--corners);
 padding: 0.5em;
 width: 80vw;
