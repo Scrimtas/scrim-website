@@ -243,7 +243,10 @@ color: #adadac;
         color:var(--sidebar-link);
     }
 
-
+a:hover {
+    color: var(--card-accents)!important;
+    text-decoration: underline;
+}
     b, strong, i, em, a:hover, a:active  {
         color: var(--accent-color-sidebar);
     }
